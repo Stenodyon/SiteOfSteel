@@ -1,5 +1,3 @@
-# Welcome to SkyOfSteel's Github Pages documentation branch
+# THis is the Github Pages repo of the offical SkyOfSteel website
 
-This branch contains the Github Pages website storing SkyOfSteel's
-automatically generated documentation. It is populated on every
-commit to master automatically by Travis CI.
+pls no judge, it was written rapidly over the course of one night
