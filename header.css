@@ -1,3 +1,8 @@
+#link-bar {
+	position: fixed;
+	z-index: 999;
+}
+
 #link-bar ul {
 	list-style-type: none;
 	margin: 0;
