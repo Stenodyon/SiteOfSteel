@@ -1,0 +1,23 @@
+#faq {
+	margin-top: 3vw;
+	margin-left: 5vw;
+}
+
+
+#faq h1 {
+	font-size: 4vw;
+	font-family: Overpass;
+}
+
+#faq .q {
+	margin-left: 1.5vw;
+	font-size: 3vw;
+	font-family: Overpass;
+}
+
+#faq .a {
+	font-size: 2vw;
+	margin-right: 10%;
+	margin-bottom: 4vw;
+	font-family: Overpass;
+}
