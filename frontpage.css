@@ -1,0 +1,38 @@
+body {
+	background-color: #77b0ff;
+}
+
+
+h1 {
+	color: #4c4c56;
+	font-family: Overpass;
+	font-size: 9vw;
+	font-style: bold;
+	text-align: center;
+	margin: 3vw;
+	margin-bottom: 0px;
+}
+
+#subtitle {
+	margin-top: 0px;
+	color: #4c4c56;
+	font-family: Overpass;
+	font-size: 3vw;
+	font-style: bold;
+	text-align: center;
+}
+
+
+#description {
+	margin-top: 2.8vw;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#description p {
+	margin-top: 0px;
+	color: #4c4c56;
+	font-family: Overpass;
+	font-size: 1.7vw;
+	font-style: bold;
+}
