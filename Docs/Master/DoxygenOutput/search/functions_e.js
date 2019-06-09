@@ -6,5 +6,5 @@ var searchData=
   ['onscreenresized',['OnScreenResized',['../classHUD.html#aeb23040d305339707c3981017a14f6dc',1,'HUD']]],
   ['onunload',['OnUnload',['../classGamemode.html#ad71ab0a1881b131dcce4140aaf8395ef',1,'Gamemode']]],
   ['open',['Open',['../classConsole.html#ad7d9459bb157673ce63aaba13c18dd87',1,'Console.Open()'],['../classConsoleWindow.html#a47d5d235fc82bdbb6935797d7a91aa8d',1,'ConsoleWindow.Open()']]],
-  ['operator_20type',['operator TYPE',['../structItems_1_1CustomItemEnum.html#ae327ad4638ddab38b5e1e7ed690491f5',1,'Items::CustomItemEnum']]]
+  ['operator_20id',['operator ID',['../structItems_1_1CustomItemEnum.html#a75cf4280598fc20b7d25b27edaef7897',1,'Items::CustomItemEnum']]]
 ];

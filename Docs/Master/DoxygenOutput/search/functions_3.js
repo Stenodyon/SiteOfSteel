@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['calculate',['Calculate',['../classBuildPositions.html#ac881b2614ca2debbf89ee9bf89165b15',1,'BuildPositions.Calculate()'],['../classBuildRotations.html#ad6748d3a40158938462f9f34ad064667',1,'BuildRotations.Calculate()']]],
+  ['calculate',['Calculate',['../classBuildPositions.html#a3dfb1f961449d539e0022328ec18067f',1,'BuildPositions.Calculate()'],['../classBuildRotations.html#a79c8b13f2eb7911b24349fbc90b14817',1,'BuildRotations.Calculate()']]],
   ['calculatearea',['CalculateArea',['../classGridClass.html#ac638c9c370df9ead071970c1132e6add',1,'GridClass']]],
   ['calculateareas',['CalculateAreas',['../classGridClass.html#aa93dfb986dd5f1c941955f4759885bb9',1,'GridClass']]],
   ['cancelpressed',['CancelPressed',['../classWaitConnectingMenu.html#a5f9be70fe12dd3bb05150a9afd2da122',1,'WaitConnectingMenu']]],

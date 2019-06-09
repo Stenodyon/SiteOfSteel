@@ -9,6 +9,6 @@ var searchData=
   ['doupdates',['DoUpdates',['../classGridClass.html#a6067e297b1efe1542b795c2ac3c68cd9',1,'GridClass']]],
   ['downloadpressed',['DownloadPressed',['../classUpdateMenu.html#aafec8c1731e4bb83e513706b29cc6897',1,'UpdateMenu']]],
   ['dowork',['DoWork',['../classGridClass.html#aab7c8aed9bb44418fa14b23302923051',1,'GridClass']]],
-  ['dropitem',['DropItem',['../classWorld.html#a13ac7dfc64d469f19c8605af13cb3084',1,'World']]],
-  ['droporupdateitem',['DropOrUpdateItem',['../classWorld.html#af28fea5ff1bba06729381451136103a1',1,'World']]]
+  ['dropitem',['DropItem',['../classWorld.html#a07d255abe9b0b4be42729d58e5f738c8',1,'World']]],
+  ['droporupdateitem',['DropOrUpdateItem',['../classWorld.html#a7d7fb74853603f7020615a62227cbe66',1,'World']]]
 ];
