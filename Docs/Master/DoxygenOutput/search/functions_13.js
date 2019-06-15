@@ -8,5 +8,6 @@ var searchData=
   ['tpland',['TpLand',['../classPlayerSfxManager.html#a63d951b23123bf01dc2148aff4e1e0f5',1,'PlayerSfxManager']]],
   ['tppickup',['TpPickup',['../classPlayerSfxManager.html#a3fe5af116a2f7b2ee9c942dbfa2c836b',1,'PlayerSfxManager']]],
   ['tpthrow',['TpThrow',['../classPlayerSfxManager.html#a148572afa7144859263ac72ff27c3224',1,'PlayerSfxManager']]],
-  ['tpwallkick',['TpWallKick',['../classPlayerSfxManager.html#ab19fd9f860251062642770711c46c04f',1,'PlayerSfxManager']]]
+  ['tpwallkick',['TpWallKick',['../classPlayerSfxManager.html#ab19fd9f860251062642770711c46c04f',1,'PlayerSfxManager']]],
+  ['trycalculatebuildposition',['TryCalculateBuildPosition',['../classItems.html#aae46f32023d876055c26eab7fd156e06',1,'Items']]]
 ];

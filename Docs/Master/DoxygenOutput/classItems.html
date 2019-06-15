@@ -86,6 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -120,18 +122,38 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:a6774bacbe40c425044480de464c64e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4976c727db43391d2cc3261fe4a7d978"><td class="memItemLeft" align="right" valign="top">delegate Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a> (<a class="el" href="classStructure.html">Structure</a> Base, float PlayerOrientation, int BuildRotation, Vector3 HitPointRelative)</td></tr>
+<tr class="separator:a4976c727db43391d2cc3261fe4a7d978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aae46f32023d876055c26eab7fd156e06"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#aae46f32023d876055c26eab7fd156e06">TryCalculateBuildPosition</a> (<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a> Branch, <a class="el" href="classStructure.html">Structure</a> Base, float PlayerOrientation, int BuildRotation, Vector3 Hit)</td></tr>
+<tr class="separator:aae46f32023d876055c26eab7fd156e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fdd49ae9ef5b50616bd5ef9779b0816"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a6fdd49ae9ef5b50616bd5ef9779b0816">CalculateBuildRotation</a> (<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a> Branch, <a class="el" href="classStructure.html">Structure</a> Base, float PlayerOrientation, int BuildRotation, Vector3 Hit)</td></tr>
+<tr class="separator:a6fdd49ae9ef5b50616bd5ef9779b0816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0d8030a64889be971fca7a301c5468"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a2d0d8030a64889be971fca7a301c5468">SetupItems</a> ()</td></tr>
+<tr class="separator:a2d0d8030a64889be971fca7a301c5468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a5bfc0ddbddcccb4bb9f329a2a48bf04a"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Mesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a5bfc0ddbddcccb4bb9f329a2a48bf04a">Meshes</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Mesh&gt;()</td></tr>
 <tr class="separator:a5bfc0ddbddcccb4bb9f329a2a48bf04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993da7032b29dd992a419d2a54d3fd9a"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Texture &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a993da7032b29dd992a419d2a54d3fd9a">Thumbnails</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Texture&gt;()</td></tr>
 <tr class="separator:a993da7032b29dd992a419d2a54d3fd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753419833f0c97c4beaf49254ff1cfd9"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <br class="typebreak"/>
+<a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a753419833f0c97c4beaf49254ff1cfd9">BuildPositions</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a>&gt;()</td></tr>
+<tr class="separator:a753419833f0c97c4beaf49254ff1cfd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91505096833f8411c35843943f5d8a74"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <br class="typebreak"/>
+<a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a91505096833f8411c35843943f5d8a74">BuildRotations</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a>&gt;()</td></tr>
+<tr class="separator:a91505096833f8411c35843943f5d8a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a74d044457deb56e0deae186ffc121d55"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Texture &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a74d044457deb56e0deae186ffc121d55">Textures</a><code> [get, set]</code></td></tr>
 <tr class="separator:a74d044457deb56e0deae186ffc121d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a101ee6b026eef70ff3fe54ba56c59dd3"><td class="memItemLeft" align="right" valign="top">static Shader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a101ee6b026eef70ff3fe54ba56c59dd3">StructureShader</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Texture&gt;()<code> [get, set]</code></td></tr>
+<tr class="memitem:a101ee6b026eef70ff3fe54ba56c59dd3"><td class="memItemLeft" align="right" valign="top">static Shader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a101ee6b026eef70ff3fe54ba56c59dd3">StructureShader</a><code> [get, set]</code></td></tr>
 <tr class="separator:a101ee6b026eef70ff3fe54ba56c59dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -146,7 +168,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00006">6</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00008">8</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a6774bacbe40c425044480de464c64e40"></a>
 <div class="memitem">
@@ -168,7 +190,7 @@ Static Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00047">47</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00052">52</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -194,11 +216,103 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00055">55</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00063">63</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4976c727db43391d2cc3261fe4a7d978"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate Vector3 Items.BuildInfoDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classStructure.html">Structure</a>&#160;</td>
+          <td class="paramname"><em>Base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>PlayerOrientation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>BuildRotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>HitPointRelative</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6fdd49ae9ef5b50616bd5ef9779b0816"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Vector3 Items.CalculateBuildRotation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>&#160;</td>
+          <td class="paramname"><em>Branch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStructure.html">Structure</a>&#160;</td>
+          <td class="paramname"><em>Base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>PlayerOrientation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>BuildRotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>Hit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00105">105</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6a0a4f4abb410fcef800127ef2ca0032"></a>
 <div class="memitem">
 <div class="memproto">
@@ -220,11 +334,134 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00039">39</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00044">44</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d0d8030a64889be971fca7a301c5468"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Items.SetupItems </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00121">121</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae46f32023d876055c26eab7fd156e06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Vector3 Items.TryCalculateBuildPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>&#160;</td>
+          <td class="paramname"><em>Branch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStructure.html">Structure</a>&#160;</td>
+          <td class="paramname"><em>Base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>PlayerOrientation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>BuildRotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>Hit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00089">89</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a753419833f0c97c4beaf49254ff1cfd9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a>&gt; Items.BuildPositions = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00058">58</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91505096833f8411c35843943f5d8a74"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a>&gt; Items.BuildRotations = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00059">59</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5bfc0ddbddcccb4bb9f329a2a48bf04a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +480,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00049">49</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00054">54</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -265,7 +502,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00050">50</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00055">55</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -278,7 +515,7 @@ Static Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Shader Items.StructureShader = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Texture&gt;()</td>
+          <td class="memname">Shader Items.StructureShader</td>
         </tr>
       </table>
   </td>
@@ -288,7 +525,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00053">53</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00061">61</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -310,7 +547,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00051">51</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00056">56</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>

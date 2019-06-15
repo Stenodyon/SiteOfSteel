@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['calculate',['Calculate',['../classBuildPositions.html#a3dfb1f961449d539e0022328ec18067f',1,'BuildPositions.Calculate()'],['../classBuildRotations.html#a79c8b13f2eb7911b24349fbc90b14817',1,'BuildRotations.Calculate()']]],
   ['calculatearea',['CalculateArea',['../classGridClass.html#ac638c9c370df9ead071970c1132e6add',1,'GridClass']]],
   ['calculateareas',['CalculateAreas',['../classGridClass.html#aa93dfb986dd5f1c941955f4759885bb9',1,'GridClass']]],
+  ['calculatebuildrotation',['CalculateBuildRotation',['../classItems.html#a6fdd49ae9ef5b50616bd5ef9779b0816',1,'Items']]],
   ['cancelpressed',['CancelPressed',['../classWaitConnectingMenu.html#a5f9be70fe12dd3bb05150a9afd2da122',1,'WaitConnectingMenu']]],
   ['centerposition',['CenterPosition',['../classPlayer.html#a732b05f511b2979b3a888b1efd94b2e4',1,'Player']]],
   ['chunkexists',['ChunkExists',['../classWorld.html#a712c99f43b0f2bcaf98fb40993b0ddb1',1,'World.ChunkExists(Vector3 Position)'],['../classWorld.html#ab0d0a95deec3a88e4fefaf819845e0ad',1,'World.ChunkExists(Tuple&lt; int, int &gt; Position)']]],
