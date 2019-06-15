@@ -140,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classItems.html#a6774bacbe40c425044480de464c64e40">   52</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a> {<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40abb1ca97ec761fc37101737ba0aa2e7c5">ERROR</a>, <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40a8b55a44b49368262df89fd0e17b1a181">PLATFORM</a>, <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40a48d536b2de1195d0c9f6ea8ab884085e">WALL</a>, <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40a9e25d7b0ad41e0f1fbf4879602236875">SLOPE</a>}</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classItems.html#a6774bacbe40c425044480de464c64e40">   52</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a> {<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40abb1ca97ec761fc37101737ba0aa2e7c5">ERROR</a>, <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40a8b55a44b49368262df89fd0e17b1a181">PLATFORM</a>, <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40a48d536b2de1195d0c9f6ea8ab884085e">WALL</a>, <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40a9e25d7b0ad41e0f1fbf4879602236875">SLOPE</a>, <a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40af7204b86d9f24f48d86d8d593b5a5529">TRIANGLE_WALL</a>}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classItems.html#a5bfc0ddbddcccb4bb9f329a2a48bf04a">   54</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;ID, Mesh&gt; <a class="code" href="classItems.html#a5bfc0ddbddcccb4bb9f329a2a48bf04a">Meshes</a> = <span class="keyword">new</span> Dictionary&lt;ID, Mesh&gt;();</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classItems.html#a993da7032b29dd992a419d2a54d3fd9a">   55</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;ID, Texture&gt; <a class="code" href="classItems.html#a993da7032b29dd992a419d2a54d3fd9a">Thumbnails</a> = <span class="keyword">new</span> Dictionary&lt;ID, Texture&gt;();</div>
@@ -423,71 +423,93 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                        <span class="keywordflow">return</span> null;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    })</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        };</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        BuildRotations = <span class="keyword">new</span> Dictionary&lt;ID, BuildInfoDelegate&gt;() {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            {</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                ID.PLATFORM,</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(); <span class="comment">//PLATFORM will always have a rotation of 0,0,0</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                    })</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            },</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                ID.WALL,</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.WALL || Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.SLOPE)</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                            <span class="keywordflow">return</span> Base.RotationDegrees;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4), 0);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                    })</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            },</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            {</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                ID.SLOPE,</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.PLATFORM)</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4) + 180, 0);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.WALL)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                        {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                            <span class="keywordtype">float</span> Orientation = SnapToGrid(PlayerOrientation, 360, 4);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 0)</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation), 360, 4), 0);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 1)</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation + 180), 360, 4), 0);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 2)</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation + 180), 360, 4), 0);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 3)</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation), 360, 4), 0);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                        }</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.SLOPE)</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                        {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                            <span class="keywordflow">if</span>(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4) == LoopRotation(Round(Base.RotationDegrees.y)))</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                            {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 0 || BuildRotation == 2)</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y), 360, 4), 0);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y + 180), 360, 4), 0);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                            }</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                            {</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 0 || BuildRotation == 2)</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y + 180), 360, 4), 0);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y), 360, 4), 0);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                            }</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                        }</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4), 0);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                    })</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            },</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        };</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    }</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;}</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            },</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                ID.TRIANGLE_WALL,</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                        <span class="keywordflow">switch</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a>)</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                        {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                            <span class="keywordflow">case</span>(ID.WALL):</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                            {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, 12, 0) + Base.<a class="code" href="interfaceIInGrid.html#ac50b9ee86629d811b2516b07b6f5b617">Translation</a>;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                            }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                        }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                    })</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        };</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        BuildRotations = <span class="keyword">new</span> Dictionary&lt;ID, BuildInfoDelegate&gt;() {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                ID.PLATFORM,</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(); <span class="comment">//PLATFORM will always have a rotation of 0,0,0</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                    })</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            },</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                ID.WALL,</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.WALL || Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.SLOPE)</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                            <span class="keywordflow">return</span> Base.RotationDegrees;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4), 0);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                    })</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            },</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                ID.SLOPE,</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.PLATFORM)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4) + 180, 0);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.WALL)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                        {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                            <span class="keywordtype">float</span> Orientation = SnapToGrid(PlayerOrientation, 360, 4);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 0)</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation), 360, 4), 0);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 1)</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation + 180), 360, 4), 0);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 2)</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation + 180), 360, 4), 0);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 3)</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation), 360, 4), 0);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                        }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.SLOPE)</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                        {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                            <span class="keywordflow">if</span>(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4) == LoopRotation(Round(Base.RotationDegrees.y)))</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                            {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 0 || BuildRotation == 2)</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y), 360, 4), 0);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y + 180), 360, 4), 0);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                            }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                            {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 0 || BuildRotation == 2)</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y + 180), 360, 4), 0);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y), 360, 4), 0);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                            }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                        }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4), 0);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                    })</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            },</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                ID.TRIANGLE_WALL,</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4), 0);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                    })</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        };</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
 <div class="ttc" id="classItems_html_aae46f32023d876055c26eab7fd156e06"><div class="ttname"><a href="classItems.html#aae46f32023d876055c26eab7fd156e06">Items.TryCalculateBuildPosition</a></div><div class="ttdeci">static Vector3 TryCalculateBuildPosition(ID Branch, Structure Base, float PlayerOrientation, int BuildRotation, Vector3 Hit)</div><div class="ttdef"><b>Definition:</b> <a href="Items_8cs_source.html#l00089">Items.cs:89</a></div></div>
 <div class="ttc" id="classItems_html"><div class="ttname"><a href="classItems.html">Items</a></div><div class="ttdef"><b>Definition:</b> <a href="Items_8cs_source.html#l00008">Items.cs:8</a></div></div>
 <div class="ttc" id="classItems_1_1Instance_html"><div class="ttname"><a href="classItems_1_1Instance.html">Items.Instance</a></div><div class="ttdef"><b>Definition:</b> <a href="Items_8cs_source.html#l00013">Items.cs:13</a></div></div>
@@ -514,6 +536,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structItems_1_1CustomItemEnum_html_a17967637360c9e88a161ac650b851934"><div class="ttname"><a href="structItems_1_1CustomItemEnum.html#a17967637360c9e88a161ac650b851934">Items.CustomItemEnum.Spot</a></div><div class="ttdeci">int Spot</div><div class="ttdef"><b>Definition:</b> <a href="Items_8cs_source.html#l00030">Items.cs:30</a></div></div>
 <div class="ttc" id="classItems_html_a993da7032b29dd992a419d2a54d3fd9a"><div class="ttname"><a href="classItems.html#a993da7032b29dd992a419d2a54d3fd9a">Items.Thumbnails</a></div><div class="ttdeci">static Dictionary&lt; ID, Texture &gt; Thumbnails</div><div class="ttdef"><b>Definition:</b> <a href="Items_8cs_source.html#l00055">Items.cs:55</a></div></div>
 <div class="ttc" id="classSteelMath_html"><div class="ttname"><a href="classSteelMath.html">SteelMath</a></div><div class="ttdef"><b>Definition:</b> <a href="SteelMath_8cs_source.html#l00004">SteelMath.cs:4</a></div></div>
+<div class="ttc" id="classItems_html_a6774bacbe40c425044480de464c64e40af7204b86d9f24f48d86d8d593b5a5529"><div class="ttname"><a href="classItems.html#a6774bacbe40c425044480de464c64e40af7204b86d9f24f48d86d8d593b5a5529">Items.TRIANGLE_WALL</a></div></div>
 <div class="ttc" id="classItems_html_a6774bacbe40c425044480de464c64e40a9e25d7b0ad41e0f1fbf4879602236875"><div class="ttname"><a href="classItems.html#a6774bacbe40c425044480de464c64e40a9e25d7b0ad41e0f1fbf4879602236875">Items.SLOPE</a></div></div>
 <div class="ttc" id="classItems_1_1Instance_html_a890daf250d4e09e5f597d9023c826b7c"><div class="ttname"><a href="classItems_1_1Instance.html#a890daf250d4e09e5f597d9023c826b7c">Items.Instance.Instance</a></div><div class="ttdeci">Instance(Items.ID TypeArg)</div><div class="ttdef"><b>Definition:</b> <a href="Items_8cs_source.html#l00020">Items.cs:20</a></div></div>
 <div class="ttc" id="classItems_1_1Instance_html_ad416af818ec4ceb8b8faf2ac46eed49a"><div class="ttname"><a href="classItems_1_1Instance.html#ad416af818ec4ceb8b8faf2ac46eed49a">Items.Instance.Temperature</a></div><div class="ttdeci">int Temperature</div><div class="ttdef"><b>Definition:</b> <a href="Items_8cs_source.html#l00016">Items.cs:16</a></div></div>
