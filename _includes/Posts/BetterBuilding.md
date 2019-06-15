@@ -28,28 +28,28 @@ time. Below are some screencasts of the new calculations in action.
 
 
 <video width="80%" controls>
-<source src="wall.m4v" type="video/mp4">
+<source src="BetterBuilding/wall.m4v" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 <br>
 
 <video width="80%" controls>
-<source src="platform_on_wall.m4v" type="video/mp4">
+<source src="BetterBuilding/platform_on_wall.m4v" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 <br>
 
 <video width="80%" controls>
-<source src="slope_on_wall.m4v" type="video/mp4">
+<source src="BetterBuilding/slope_on_wall.m4v" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 <br>
 
 <video width="80%" controls>
-<source src="hole_in_ground.m4v" type="video/mp4">
+<source src="BetterBuilding/hole_in_ground.m4v" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
@@ -57,7 +57,7 @@ Your browser does not support the video tag.
 For reference this is that last clip with the old system
 
 <video width="80%" controls>
-<source src="old_hole.mp4" type="video/mp4">
+<source src="BetterBuilding/old_hole.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
