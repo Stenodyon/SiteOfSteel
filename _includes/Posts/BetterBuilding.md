@@ -22,7 +22,7 @@ first of these in-between developer blog posts.
 
 For 0.1.3 I wanted to revisit the building mechanic and how the player interacts
 with it. The building system has recieved little love since it's initial
-implimentation and the cracks were starting to show. As a result I've gone in
+implementation and the cracks were starting to show. As a result I've gone in
 and rewrote most of the calculations and made it more mod friendly at the same
 time. Below are some screencasts of the new calculations in action.
 
