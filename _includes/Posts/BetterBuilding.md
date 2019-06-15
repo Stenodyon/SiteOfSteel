@@ -69,8 +69,8 @@ Your browser does not support the video tag.
 In addition to the redone building calculations I've also been starting on a new
 building tile. I'll cut straight to the *point.*
 
-![Triangle wall image one](triangle_wall_1.png)
-![Triangle wall image two](triangle_wall_2.png)
+![Triangle wall image one](BetterBuilding/triangle_wall_1.png)
+![Triangle wall image two](BetterBuilding/triangle_wall_2.png)
 
 Thats right! Triangular walls are coming to SkyOfSteel in 0.1.3! I'm also
 experimenting with another triangular surprise ;) For that you'll just have to
