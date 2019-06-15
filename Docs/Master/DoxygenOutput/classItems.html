@@ -121,15 +121,23 @@ Public Types</h2></td></tr>
 <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40a48d536b2de1195d0c9f6ea8ab884085e">ID.WALL</a>, 
 <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40a9e25d7b0ad41e0f1fbf4879602236875">ID.SLOPE</a>, 
 <br/>
-&#160;&#160;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40af7204b86d9f24f48d86d8d593b5a5529">ID.TRIANGLE_WALL</a>
+&#160;&#160;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40af7204b86d9f24f48d86d8d593b5a5529">ID.TRIANGLE_WALL</a>, 
+<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40a087f145ae655e5df3621fb3bbb49e968">ID.ROCKET_LAUNCHER</a>
 <br/>
  }</td></tr>
 <tr class="separator:a6774bacbe40c425044480de464c64e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f20ab3ea0745d32edfbf224fbb8de3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a76f20ab3ea0745d32edfbf224fbb8de3">TYPE</a> { <a class="el" href="classItems.html#a76f20ab3ea0745d32edfbf224fbb8de3abb1ca97ec761fc37101737ba0aa2e7c5">TYPE.ERROR</a>, 
+<a class="el" href="classItems.html#a76f20ab3ea0745d32edfbf224fbb8de3acf929af6b34366e303f51acfec4eb7be">TYPE.BUILDABLE</a>, 
+<a class="el" href="classItems.html#a76f20ab3ea0745d32edfbf224fbb8de3a17a30f4986aa89ca9675d255091d4546">TYPE.USABLE</a>
+ }</td></tr>
+<tr class="separator:a76f20ab3ea0745d32edfbf224fbb8de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4976c727db43391d2cc3261fe4a7d978"><td class="memItemLeft" align="right" valign="top">delegate Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a> (<a class="el" href="classStructure.html">Structure</a> Base, float PlayerOrientation, int BuildRotation, Vector3 HitPointRelative)</td></tr>
 <tr class="separator:a4976c727db43391d2cc3261fe4a7d978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a632388c864d5f1cbdba261789bed3"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#ae3a632388c864d5f1cbdba261789bed3">UseItemDelegate</a> (<a class="el" href="classItems_1_1Instance.html">Instance</a> Item, <a class="el" href="classPlayer.html">Player</a> UsingPlayer)</td></tr>
+<tr class="separator:ae3a632388c864d5f1cbdba261789bed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -137,11 +145,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aae46f32023d876055c26eab7fd156e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fdd49ae9ef5b50616bd5ef9779b0816"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a6fdd49ae9ef5b50616bd5ef9779b0816">CalculateBuildRotation</a> (<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a> Branch, <a class="el" href="classStructure.html">Structure</a> Base, float PlayerOrientation, int BuildRotation, Vector3 Hit)</td></tr>
 <tr class="separator:a6fdd49ae9ef5b50616bd5ef9779b0816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b58366a9fe755cb62a173fa188a850"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a00b58366a9fe755cb62a173fa188a850">UseItem</a> (<a class="el" href="classItems_1_1Instance.html">Instance</a> Item, <a class="el" href="classPlayer.html">Player</a> UsingPlayer)</td></tr>
+<tr class="separator:a00b58366a9fe755cb62a173fa188a850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d0d8030a64889be971fca7a301c5468"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a2d0d8030a64889be971fca7a301c5468">SetupItems</a> ()</td></tr>
 <tr class="separator:a2d0d8030a64889be971fca7a301c5468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a0f0f53998acf586482499ea6a6514dfc"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a0f0f53998acf586482499ea6a6514dfc">MaxRocketPush</a> = 100</td></tr>
+<tr class="separator:a0f0f53998acf586482499ea6a6514dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0816b9313c3a9371749f38fa02dd403"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#aa0816b9313c3a9371749f38fa02dd403">MaxRocketDistance</a> = 30</td></tr>
+<tr class="separator:aa0816b9313c3a9371749f38fa02dd403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bfc0ddbddcccb4bb9f329a2a48bf04a"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Mesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a5bfc0ddbddcccb4bb9f329a2a48bf04a">Meshes</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Mesh&gt;()</td></tr>
 <tr class="separator:a5bfc0ddbddcccb4bb9f329a2a48bf04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993da7032b29dd992a419d2a54d3fd9a"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Texture &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a993da7032b29dd992a419d2a54d3fd9a">Thumbnails</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, Texture&gt;()</td></tr>
@@ -152,6 +166,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a91505096833f8411c35843943f5d8a74"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <br class="typebreak"/>
 <a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#a91505096833f8411c35843943f5d8a74">BuildRotations</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#a4976c727db43391d2cc3261fe4a7d978">BuildInfoDelegate</a>&gt;()</td></tr>
 <tr class="separator:a91505096833f8411c35843943f5d8a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4838350e0b5fb1867ae2c4f88b2f79f"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <br class="typebreak"/>
+<a class="el" href="classItems.html#ae3a632388c864d5f1cbdba261789bed3">UseItemDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classItems.html#aa4838350e0b5fb1867ae2c4f88b2f79f">UseDelegates</a> = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#ae3a632388c864d5f1cbdba261789bed3">UseItemDelegate</a>&gt;()</td></tr>
+<tr class="separator:aa4838350e0b5fb1867ae2c4f88b2f79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -194,9 +211,33 @@ Static Private Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a6774bacbe40c425044480de464c64e40af7204b86d9f24f48d86d8d593b5a5529"></a>TRIANGLE_WALL</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6774bacbe40c425044480de464c64e40a087f145ae655e5df3621fb3bbb49e968"></a>ROCKET_LAUNCHER</em>&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00052">52</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00069">69</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76f20ab3ea0745d32edfbf224fbb8de3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classItems.html#a76f20ab3ea0745d32edfbf224fbb8de3">Items.TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a76f20ab3ea0745d32edfbf224fbb8de3abb1ca97ec761fc37101737ba0aa2e7c5"></a>ERROR</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a76f20ab3ea0745d32edfbf224fbb8de3acf929af6b34366e303f51acfec4eb7be"></a>BUILDABLE</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a76f20ab3ea0745d32edfbf224fbb8de3a17a30f4986aa89ca9675d255091d4546"></a>USABLE</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00070">70</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -222,7 +263,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00063">63</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00082">82</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -315,7 +356,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00105">105</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00124">124</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -340,7 +381,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00044">44</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00061">61</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -365,7 +406,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00121">121</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00151">151</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -419,7 +460,69 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00089">89</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00108">108</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00b58366a9fe755cb62a173fa188a850"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Items.UseItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classItems_1_1Instance.html">Instance</a>&#160;</td>
+          <td class="paramname"><em>Item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classPlayer.html">Player</a>&#160;</td>
+          <td class="paramname"><em>UsingPlayer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00140">140</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3a632388c864d5f1cbdba261789bed3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Items.UseItemDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classItems_1_1Instance.html">Instance</a>&#160;</td>
+          <td class="paramname"><em>Item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classPlayer.html">Player</a>&#160;</td>
+          <td class="paramname"><em>UsingPlayer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -442,7 +545,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00058">58</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00076">76</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -464,7 +567,51 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00059">59</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00077">77</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0816b9313c3a9371749f38fa02dd403"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Items.MaxRocketDistance = 30</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00015">15</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f0f53998acf586482499ea6a6514dfc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Items.MaxRocketPush = 100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00014">14</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -486,7 +633,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00054">54</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00072">72</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -508,7 +655,29 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00055">55</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00073">73</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4838350e0b5fb1867ae2c4f88b2f79f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#ae3a632388c864d5f1cbdba261789bed3">UseItemDelegate</a>&gt; Items.UseDelegates = new Dictionary&lt;<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>, <a class="el" href="classItems.html#ae3a632388c864d5f1cbdba261789bed3">UseItemDelegate</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00078">78</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -531,7 +700,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00061">61</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00080">80</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>
@@ -553,7 +722,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Items_8cs_source.html#l00056">56</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
+<p>Definition at line <a class="el" href="Items_8cs_source.html#l00074">74</a> of file <a class="el" href="Items_8cs_source.html">Items.cs</a>.</p>
 
 </div>
 </div>

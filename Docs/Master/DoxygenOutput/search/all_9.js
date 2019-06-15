@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['id',['ID',['../classItems.html#a6774bacbe40c425044480de464c64e40',1,'Items.ID()'],['../classPlayer.html#ae8b62f5f01eef62c98db37b5efa8215b',1,'Player.Id()']]],
+  ['id',['ID',['../classItems.html#a6774bacbe40c425044480de464c64e40',1,'Items.ID()'],['../classItems_1_1Instance.html#aa2cf9cb3f93a0f598cc3c9e293f8e232',1,'Items.Instance.Id()'],['../classPlayer.html#ae8b62f5f01eef62c98db37b5efa8215b',1,'Player.Id()']]],
   ['ignorepressed',['IgnorePressed',['../classUpdateMenu.html#a41912175a20b6d48e8cc4f4500974c62',1,'UpdateMenu']]],
   ['iingrid',['IInGrid',['../interfaceIInGrid.html',1,'']]],
   ['initialnetworldload',['InitialNetWorldLoad',['../classWorld.html#a7c4018b34af9680e5a75f9df8906e2b4',1,'World']]],
   ['inputline',['InputLine',['../classConsole.html#a4fd20edda70bcdfa509f99b5fb1e3e3d',1,'Console.InputLine()'],['../classConsoleWindow.html#a991cc5cf48511b59ebe029a7ed668d15',1,'ConsoleWindow.InputLine()']]],
   ['instance',['Instance',['../classItems_1_1Instance.html',1,'Items']]],
-  ['instance',['Instance',['../classItems_1_1Instance.html#a890daf250d4e09e5f597d9023c826b7c',1,'Items::Instance']]],
+  ['instance',['Instance',['../classItems_1_1Instance.html#aed765acf5e4df9081b07cd1d8035e318',1,'Items::Instance']]],
   ['intro',['Intro',['../classIntro.html',1,'Intro'],['../classMenu.html#ae34dd1fe074062671eaae8e41074a96a',1,'Menu.Intro()']]],
   ['intro_2ecs',['Intro.cs',['../Intro_8cs.html',1,'']]],
   ['inventory',['Inventory',['../classPlayer.html#afba22011adb6b3eb7030056845adc62d',1,'Player']]],

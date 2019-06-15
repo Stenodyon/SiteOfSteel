@@ -5,6 +5,8 @@ var searchData=
   ['maxfallspeed',['MaxFallSpeed',['../classDroppedItem.html#a332919cd0e7eafb78e157b1e5555efbb',1,'DroppedItem']]],
   ['maxjumplength',['MaxJumpLength',['../classPlayer.html#aa06732cd3f6955f9c36de519ce4fd32f',1,'Player']]],
   ['maxplayers',['MaxPlayers',['../classGame.html#aff4e8e31b7687e96cb443a25e7586974',1,'Game']]],
+  ['maxrocketdistance',['MaxRocketDistance',['../classItems.html#aa0816b9313c3a9371749f38fa02dd403',1,'Items']]],
+  ['maxrocketpush',['MaxRocketPush',['../classItems.html#a0f0f53998acf586482499ea6a6514dfc',1,'Items']]],
   ['maxverticalspeed',['MaxVerticalSpeed',['../classPlayer.html#aa49ffbd37b2956afdc004cd8d3e4a0d8',1,'Player']]],
   ['maxwaitforserverdelay',['MaxWaitForServerDelay',['../classNet.html#a9d67597affec0c88bdcd2afbb8492258',1,'Net']]],
   ['mesh',['Mesh',['../classDroppedItem.html#a69ba04f5789d319e7096c84ba89ef55a',1,'DroppedItem']]],

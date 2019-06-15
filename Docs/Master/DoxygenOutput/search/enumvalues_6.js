@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right',['RIGHT',['../classBindings.html#a35badd58ab9e62e5f47320ec08569985a21507b40c80068eda19865706fdc2403',1,'Bindings']]]
+  ['platform',['PLATFORM',['../classItems.html#a6774bacbe40c425044480de464c64e40a8b55a44b49368262df89fd0e17b1a181',1,'Items']]]
 ];
