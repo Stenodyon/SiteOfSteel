@@ -552,7 +552,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                            Camera Cam = UsingPlayer.GetNode&lt;Camera&gt;(<span class="stringliteral">&quot;SteelCamera&quot;</span>);</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                            Vector3 Push = <span class="keyword">new</span> Vector3(0, 0, Power);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                            Push = Push.Rotated(<span class="keyword">new</span> Vector3(1,0,0), Deg2Rad(Cam.RotationDegrees.x));</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                            Push = Push.Rotated(<span class="keyword">new</span> Vector3(1,0,0), Deg2Rad(LoopRotation(Cam.RotationDegrees.x)));</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                            Push = Push.Rotated(<span class="keyword">new</span> Vector3(0,1,0), Deg2Rad(LoopRotation(UsingPlayer.RotationDegrees.y + 180)));</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                            Push.y /= RocketVerticalDivisor;</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                            UsingPlayer.Momentum += Push;</div>
