@@ -26,6 +26,8 @@ var searchData=
   ['inventoryup',['InventoryUp',['../classPlayer.html#a81d7c10580f7dfc28f841f02f8ee584b',1,'Player']]],
   ['ip',['Ip',['../classNet.html#a779150436be77df01034c832292becf0',1,'Net']]],
   ['ipedit',['IpEdit',['../classConnectMenu.html#ae86839ec5c9c0da44eb0514751d3d6d6',1,'ConnectMenu']]],
+  ['ipushable',['IPushable',['../interfaceIPushable.html',1,'']]],
+  ['ipushable_2ecs',['IPushable.cs',['../IPushable_8cs.html',1,'']]],
   ['iscrouching',['IsCrouching',['../classPlayer.html#a79992b7d78e692089f4b921937193e05',1,'Player']]],
   ['isjumping',['IsJumping',['../classPlayer.html#acac5478896fc08c0da58ff9aa6514c08',1,'Player']]],
   ['isopen',['IsOpen',['../classConsole.html#a35784baa7adf50bb1e19cbe31a8948c4',1,'Console.IsOpen()'],['../classConsoleWindow.html#afb6f8e140f4abc31ac417f07997541b1',1,'ConsoleWindow.IsOpen()'],['../classMenu.html#af434e1f483fb63a55fd1b9a5e5da12fc',1,'Menu.IsOpen()'],['../classWorld.html#a8734595f82c8d5fc3fdd797761688234',1,'World.IsOpen()']]],
