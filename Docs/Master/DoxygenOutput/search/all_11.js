@@ -31,7 +31,7 @@ var searchData=
   ['rightaxis',['RightAxis',['../classPlayer.html#a586d83e2ac46eb3f080884ff1aff787d',1,'Player']]],
   ['rightmove',['RightMove',['../classPlayer.html#ad31409406e4a4b2ccaff1f187f3c6b9d',1,'Player']]],
   ['rightsens',['RightSens',['../classPlayer.html#a9c135d11f60fd2d64f233e355a6ee534',1,'Player']]],
-  ['rocket_5flauncher',['ROCKET_LAUNCHER',['../classItems.html#a6774bacbe40c425044480de464c64e40a087f145ae655e5df3621fb3bbb49e968',1,'Items']]],
+  ['rocket_5fjumper',['ROCKET_JUMPER',['../classItems.html#a6774bacbe40c425044480de464c64e40a8a268eec595412742bfefa6674e207d8',1,'Items']]],
   ['rockethorizontalmultiplyer',['RocketHorizontalMultiplyer',['../classItems.html#ac8e1bf4bc8e28d81d87b91ee1112ad89',1,'Items']]],
   ['rocketverticaldivisor',['RocketVerticalDivisor',['../classItems.html#ad8feb7209f82fa0af0f15ff8c4cc1a71',1,'Items']]],
   ['rps',['RPS',['../classDroppedItem.html#ac7637f7c67c1672bd05dd6783399fe08',1,'DroppedItem']]],
