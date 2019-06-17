@@ -224,6 +224,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aec3892803cbf1a429f75e9dd2654a38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa36f605a9c1de629f607962cf6154e3f"><td class="memItemLeft" align="right" valign="top">System.Tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aa36f605a9c1de629f607962cf6154e3f">CurrentChunk</a> = new System.Tuple&lt;int, int&gt;(0, 0)</td></tr>
 <tr class="separator:aa36f605a9c1de629f607962cf6154e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5e90f13321e19b6fb9cb379a33bb9e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ad5e90f13321e19b6fb9cb379a33bb9e5">ForwardAxis</a> = 0</td></tr>
+<tr class="separator:ad5e90f13321e19b6fb9cb379a33bb9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586d83e2ac46eb3f080884ff1aff787d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a586d83e2ac46eb3f080884ff1aff787d">RightAxis</a> = 0</td></tr>
+<tr class="separator:a586d83e2ac46eb3f080884ff1aff787d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8042c5639c1f4f63e64fc196f9d485ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a8042c5639c1f4f63e64fc196f9d485ad">JumpAxis</a> = 0</td></tr>
+<tr class="separator:a8042c5639c1f4f63e64fc196f9d485ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97a080a05fd57146c3e777c48c1b3573"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a97a080a05fd57146c3e777c48c1b3573">ForwardSens</a> = 0</td></tr>
 <tr class="separator:a97a080a05fd57146c3e777c48c1b3573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad38956b8cb2ca0547045f56e62eb897c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ad38956b8cb2ca0547045f56e62eb897c">BackwardSens</a> = 0</td></tr>
@@ -244,10 +250,22 @@ Public Attributes</h2></td></tr>
 <tr class="separator:acac5478896fc08c0da58ff9aa6514c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e768c08a825e60fd8c99aae9b1e790"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ab9e768c08a825e60fd8c99aae9b1e790">WasOnFloor</a> = false</td></tr>
 <tr class="separator:ab9e768c08a825e60fd8c99aae9b1e790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0cc9476a82ae73f63392e840023575f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aa0cc9476a82ae73f63392e840023575f">JumpTimer</a> = 0f</td></tr>
+<tr class="separator:aa0cc9476a82ae73f63392e840023575f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c1e53706908ab6e4af3bf7d164cc62"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a87c1e53706908ab6e4af3bf7d164cc62">RecoverPercentage</a> = 1</td></tr>
 <tr class="separator:a87c1e53706908ab6e4af3bf7d164cc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac03ec8b9fab4448468e0ecfe669d2cbc"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ac03ec8b9fab4448468e0ecfe669d2cbc">Momentum</a> = new Vector3(0,0,0)</td></tr>
 <tr class="separator:ac03ec8b9fab4448468e0ecfe669d2cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380b565ee1fa38bf086fb2c6c7c82b87"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a380b565ee1fa38bf086fb2c6c7c82b87">LastMomentumY</a> = 0</td></tr>
+<tr class="separator:a380b565ee1fa38bf086fb2c6c7c82b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648b8dc110677287f624c875ebc48e9c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a648b8dc110677287f624c875ebc48e9c">LookHorizontal</a> = 0</td></tr>
+<tr class="separator:a648b8dc110677287f624c875ebc48e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4248bd33d63e58f75a47ad88ed2a22f0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a4248bd33d63e58f75a47ad88ed2a22f0">LookVertical</a> = 0</td></tr>
+<tr class="separator:a4248bd33d63e58f75a47ad88ed2a22f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af471396a70a286f05b001d14b61643e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#af471396a70a286f05b001d14b61643e6">IsPrimaryFiring</a> = false</td></tr>
+<tr class="separator:af471396a70a286f05b001d14b61643e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2204deb48aeff469da562a297c3442f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ac2204deb48aeff469da562a297c3442f">IsSecondaryFiring</a> = false</td></tr>
+<tr class="separator:ac2204deb48aeff469da562a297c3442f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba22011adb6b3eb7030056845adc62d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classItems_1_1Instance.html">Items.Instance</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#afba22011adb6b3eb7030056845adc62d">Inventory</a> = new <a class="el" href="classItems_1_1Instance.html">Items.Instance</a>[10]</td></tr>
 <tr class="separator:afba22011adb6b3eb7030056845adc62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4f1bfc3b4a60a374a7efbc1acb18f38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ab4f1bfc3b4a60a374a7efbc1acb18f38">InventorySlot</a> = 0</td></tr>
@@ -260,6 +278,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0885b46ec570bba9fccd530e90e80e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a332209051f5c687b04f9922890120a29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHUD.html">HUD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a332209051f5c687b04f9922890120a29">HUDInstance</a></td></tr>
 <tr class="separator:a332209051f5c687b04f9922890120a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9c4e773cc92978d25ea2e3feb8ecbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGhost.html">Ghost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a6c9c4e773cc92978d25ea2e3feb8ecbf">GhostInstance</a></td></tr>
+<tr class="separator:a6c9c4e773cc92978d25ea2e3feb8ecbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace57dc3598e84275d1c04b045f9f4ab1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlayerSfxManager.html">PlayerSfxManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ace57dc3598e84275d1c04b045f9f4ab1">SfxManager</a></td></tr>
 <tr class="separator:ace57dc3598e84275d1c04b045f9f4ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -285,26 +305,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aa9fb8c67bf181b7aed7490b7a0dcfd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d141900f49e890a21e842fa481405e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a2d141900f49e890a21e842fa481405e2">Frozen</a> = true</td></tr>
 <tr class="separator:a2d141900f49e890a21e842fa481405e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5e90f13321e19b6fb9cb379a33bb9e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ad5e90f13321e19b6fb9cb379a33bb9e5">ForwardAxis</a> = 0</td></tr>
-<tr class="separator:ad5e90f13321e19b6fb9cb379a33bb9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a586d83e2ac46eb3f080884ff1aff787d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a586d83e2ac46eb3f080884ff1aff787d">RightAxis</a> = 0</td></tr>
-<tr class="separator:a586d83e2ac46eb3f080884ff1aff787d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8042c5639c1f4f63e64fc196f9d485ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a8042c5639c1f4f63e64fc196f9d485ad">JumpAxis</a> = 0</td></tr>
-<tr class="separator:a8042c5639c1f4f63e64fc196f9d485ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0cc9476a82ae73f63392e840023575f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aa0cc9476a82ae73f63392e840023575f">JumpTimer</a> = 0f</td></tr>
-<tr class="separator:aa0cc9476a82ae73f63392e840023575f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380b565ee1fa38bf086fb2c6c7c82b87"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a380b565ee1fa38bf086fb2c6c7c82b87">LastMomentumY</a> = 0</td></tr>
-<tr class="separator:a380b565ee1fa38bf086fb2c6c7c82b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a648b8dc110677287f624c875ebc48e9c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a648b8dc110677287f624c875ebc48e9c">LookHorizontal</a> = 0</td></tr>
-<tr class="separator:a648b8dc110677287f624c875ebc48e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4248bd33d63e58f75a47ad88ed2a22f0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a4248bd33d63e58f75a47ad88ed2a22f0">LookVertical</a> = 0</td></tr>
-<tr class="separator:a4248bd33d63e58f75a47ad88ed2a22f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af471396a70a286f05b001d14b61643e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#af471396a70a286f05b001d14b61643e6">IsPrimaryFiring</a> = false</td></tr>
-<tr class="separator:af471396a70a286f05b001d14b61643e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2204deb48aeff469da562a297c3442f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ac2204deb48aeff469da562a297c3442f">IsSecondaryFiring</a> = false</td></tr>
-<tr class="separator:ac2204deb48aeff469da562a297c3442f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c9c4e773cc92978d25ea2e3feb8ecbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGhost.html">Ghost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a6c9c4e773cc92978d25ea2e3feb8ecbf">GhostInstance</a></td></tr>
-<tr class="separator:a6c9c4e773cc92978d25ea2e3feb8ecbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -1476,19 +1476,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="ad5e90f13321e19b6fb9cb379a33bb9e5"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Player.ForwardAxis = 0</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00040">40</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -1534,19 +1526,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="a6c9c4e773cc92978d25ea2e3feb8ecbf"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classGhost.html">Ghost</a> Player.GhostInstance</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00073">73</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -1654,19 +1638,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="af471396a70a286f05b001d14b61643e6"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Player.IsPrimaryFiring = false</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00061">61</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -1676,19 +1652,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="ac2204deb48aeff469da562a297c3442f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Player.IsSecondaryFiring = false</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00062">62</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -1740,19 +1708,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="a8042c5639c1f4f63e64fc196f9d485ad"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Player.JumpAxis = 0</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00042">42</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -1818,19 +1778,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="aa0cc9476a82ae73f63392e840023575f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float Player.JumpTimer = 0f</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00055">55</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -1840,19 +1792,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="a380b565ee1fa38bf086fb2c6c7c82b87"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float Player.LastMomentumY = 0</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00058">58</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -1890,19 +1834,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="a648b8dc110677287f624c875ebc48e9c"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float Player.LookHorizontal = 0</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00059">59</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -1912,19 +1848,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="a4248bd33d63e58f75a47ad88ed2a22f0"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float Player.LookVertical = 0</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00060">60</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
@@ -2032,19 +1960,11 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="a586d83e2ac46eb3f080884ff1aff787d"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Player.RightAxis = 0</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Player_8cs_source.html#l00041">41</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
