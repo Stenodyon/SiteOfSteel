@@ -102,32 +102,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classSteelMath.html#ae94f4a7f95480141f540acfc20e23176">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="classSteelMath.html#ae94f4a7f95480141f540acfc20e23176">LoopRotation</a>(<span class="keywordtype">float</span> Rot)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">while</span>(Rot &gt; 360)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            Rot -= 360;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        Rot = Rot % 360;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">if</span>(Rot &lt; 0)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            Rot += 360;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">while</span>(Rot &lt; 0)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            Rot += 360;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">if</span>(Rot == 360)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            Rot = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> Rot;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classSteelMath.html#a1cb570ba34c61abe360fcc7a6a4d3040">   33</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> Vector3 <a class="code" href="classSteelMath.html#a1cb570ba34c61abe360fcc7a6a4d3040">ClampVec3</a>(Vector3 Vec, <span class="keywordtype">float</span> Min, <span class="keywordtype">float</span> Max)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> Vec.Normalized() * Mathf.Clamp(Vec.Length(), Min, Max);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span>(Rot == 360)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            Rot = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> Rot;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classSteelMath.html#a1cb570ba34c61abe360fcc7a6a4d3040">   26</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> Vector3 <a class="code" href="classSteelMath.html#a1cb570ba34c61abe360fcc7a6a4d3040">ClampVec3</a>(Vector3 Vec, <span class="keywordtype">float</span> Min, <span class="keywordtype">float</span> Max)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> Vec.Normalized() * Mathf.Clamp(Vec.Length(), Min, Max);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="ttc" id="classSteelMath_html_ab507956784020e95ebece3256d0b6ba9"><div class="ttname"><a href="classSteelMath.html#ab507956784020e95ebece3256d0b6ba9">SteelMath.SnapToGrid</a></div><div class="ttdeci">static float SnapToGrid(float ToSnap, int GridSize, int DivisionCount)</div><div class="ttdef"><b>Definition:</b> <a href="SteelMath_8cs_source.html#l00006">SteelMath.cs:6</a></div></div>
-<div class="ttc" id="classSteelMath_html_a1cb570ba34c61abe360fcc7a6a4d3040"><div class="ttname"><a href="classSteelMath.html#a1cb570ba34c61abe360fcc7a6a4d3040">SteelMath.ClampVec3</a></div><div class="ttdeci">static Vector3 ClampVec3(Vector3 Vec, float Min, float Max)</div><div class="ttdef"><b>Definition:</b> <a href="SteelMath_8cs_source.html#l00033">SteelMath.cs:33</a></div></div>
+<div class="ttc" id="classSteelMath_html_a1cb570ba34c61abe360fcc7a6a4d3040"><div class="ttname"><a href="classSteelMath.html#a1cb570ba34c61abe360fcc7a6a4d3040">SteelMath.ClampVec3</a></div><div class="ttdeci">static Vector3 ClampVec3(Vector3 Vec, float Min, float Max)</div><div class="ttdef"><b>Definition:</b> <a href="SteelMath_8cs_source.html#l00026">SteelMath.cs:26</a></div></div>
 <div class="ttc" id="classSteelMath_html_ae94f4a7f95480141f540acfc20e23176"><div class="ttname"><a href="classSteelMath.html#ae94f4a7f95480141f540acfc20e23176">SteelMath.LoopRotation</a></div><div class="ttdeci">static float LoopRotation(float Rot)</div><div class="ttdef"><b>Definition:</b> <a href="SteelMath_8cs_source.html#l00012">SteelMath.cs:12</a></div></div>
 <div class="ttc" id="classSteelMath_html"><div class="ttname"><a href="classSteelMath.html">SteelMath</a></div><div class="ttdef"><b>Definition:</b> <a href="SteelMath_8cs_source.html#l00004">SteelMath.cs:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
