@@ -8,8 +8,6 @@ var searchData=
   ['wall',['WALL',['../classItems.html#a6774bacbe40c425044480de464c64e40a48d536b2de1195d0c9f6ea8ab884085e',1,'Items']]],
   ['wallkickhorzontalforce',['WallKickHorzontalForce',['../classPlayer.html#a262b8462c7a9248d62a0604b83ff19a2',1,'Player']]],
   ['wallkickjumpforce',['WallKickJumpForce',['../classPlayer.html#a76aceddd904d3f32a69c430b26441bb7',1,'Player']]],
-  ['wallkickrecoverpercentage',['WallKickRecoverPercentage',['../classPlayer.html#a65ca371221d58fd4531e5aa9a29c54b4',1,'Player']]],
-  ['wallkickrecoverspeed',['WallKickRecoverSpeed',['../classPlayer.html#a84ee8af9cf4a5d984760a5de73d58f10',1,'Player']]],
   ['wasonfloor',['WasOnFloor',['../classPlayer.html#ab9e768c08a825e60fd8c99aae9b1e790',1,'Player']]],
   ['websitepressed',['WebsitePressed',['../classMainMenu.html#a145a07e81e0e4b4e6f341934ebe36663',1,'MainMenu']]],
   ['window',['Window',['../classConsole.html#a5e43efb8f2e3d4230d1424f50068f709',1,'Console']]],

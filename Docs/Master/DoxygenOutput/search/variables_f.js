@@ -1,6 +1,8 @@
 var searchData=
 [
   ['r',['R',['../classSavedStructure.html#aed1cec3197ac975948e2526cf44e8861',1,'SavedStructure']]],
+  ['recoverpercentage',['RecoverPercentage',['../classPlayer.html#a87c1e53706908ab6e4af3bf7d164cc62',1,'Player']]],
+  ['recoverspeed',['RecoverSpeed',['../classPlayer.html#a27cdc203f83b608f7dee64d883a3bd83',1,'Player']]],
   ['redmat',['RedMat',['../classGhost.html#aa44195b94e677ff02e0c7c1c1e32499e',1,'Ghost']]],
   ['remoteloadedchunks',['RemoteLoadedChunks',['../classWorld.html#ad83b2e587ad931c5f9b73f88cb34999a',1,'World']]],
   ['remoteversion',['RemoteVersion',['../classGame.html#ace9bd1c9eb6f772482be85f04336f49e',1,'Game']]],
