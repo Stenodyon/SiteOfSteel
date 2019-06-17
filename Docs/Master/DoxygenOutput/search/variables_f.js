@@ -10,8 +10,8 @@ var searchData=
   ['renametoolbar',['RenameToolbar',['../classHostMenu.html#ab6775a0cfff91d1858968fc304eea807',1,'HostMenu']]],
   ['rightaxis',['RightAxis',['../classPlayer.html#a586d83e2ac46eb3f080884ff1aff787d',1,'Player']]],
   ['rightsens',['RightSens',['../classPlayer.html#a9c135d11f60fd2d64f233e355a6ee534',1,'Player']]],
-  ['rockethorizontalmultiplyer',['RocketHorizontalMultiplyer',['../classItems.html#ac8e1bf4bc8e28d81d87b91ee1112ad89',1,'Items']]],
-  ['rocketverticaldivisor',['RocketVerticalDivisor',['../classItems.html#ad8feb7209f82fa0af0f15ff8c4cc1a71',1,'Items']]],
+  ['rockethorizontalmultiplyer',['RocketHorizontalMultiplyer',['../classRocketJumper.html#a13388f62766ec38e2852c1295a229c49',1,'RocketJumper']]],
+  ['rocketverticaldivisor',['RocketVerticalDivisor',['../classRocketJumper.html#a5d769f0ff038f9290eba6d033b97d47e',1,'RocketJumper']]],
   ['rps',['RPS',['../classDroppedItem.html#ac7637f7c67c1672bd05dd6783399fe08',1,'DroppedItem']]],
   ['runtimeroot',['RuntimeRoot',['../classGame.html#a43ec0bc21bbeff875976141bcad60fb0',1,'Game']]]
 ];

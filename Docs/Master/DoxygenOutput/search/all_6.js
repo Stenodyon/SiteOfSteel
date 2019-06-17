@@ -1,6 +1,7 @@
 var searchData=
 [
   ['filespressed',['FilesPressed',['../classMainMenu.html#a97ad177df957e61c82b90ed96ac86f6c',1,'MainMenu']]],
+  ['fire',['Fire',['../classRocketJumper.html#a33f539668df3c0ccee730d6577cb114d',1,'RocketJumper']]],
   ['fly',['Fly',['../classAPI.html#a9eace4fadcef330fc5ac9ab29f5cf131',1,'API']]],
   ['flymode',['FlyMode',['../classPlayer.html#abceda65c999f3787d043092ac74833c7',1,'Player']]],
   ['forwardaxis',['ForwardAxis',['../classPlayer.html#ad5e90f13321e19b6fb9cb379a33bb9e5',1,'Player']]],
