@@ -2,6 +2,7 @@ var searchData=
 [
   ['filespressed',['FilesPressed',['../classMainMenu.html#a97ad177df957e61c82b90ed96ac86f6c',1,'MainMenu']]],
   ['fire',['Fire',['../classRocketJumper.html#a33f539668df3c0ccee730d6577cb114d',1,'RocketJumper']]],
+  ['flatten',['Flatten',['../classSteelMath.html#abb4b56e5e9f7bc3dc5dcb2e4fbd2b493',1,'SteelMath']]],
   ['fly',['Fly',['../classAPI.html#a9eace4fadcef330fc5ac9ab29f5cf131',1,'API']]],
   ['forwardmove',['ForwardMove',['../classPlayer.html#a6ecae580a7f73c91cbf58b480761cb5b',1,'Player']]],
   ['fpland',['FpLand',['../classPlayerSfxManager.html#a6d26e239e840d695c0a62716a18c1852',1,'PlayerSfxManager']]],
