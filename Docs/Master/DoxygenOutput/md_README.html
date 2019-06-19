@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h3>Welcome to the GitHub repository of the game SkyOfSteel!</h3>
-<p>SkyOfSteel is a work in progress game built on the Godot game engine with C#, currently builds with Godot Mono 3.1.1 Stable The current stable release (slightly outdated) can be downloaded at <a href="https://forloveofcats.itch.io/skyofsteel" title="Itch.io link">Itch.io</a></p>
+<p>SkyOfSteel is a work in progress game built on the Godot game engine with C#, currently builds with Godot Mono 3.1.1 Stable The current stable release can be downloaded at <a href="https://forloveofcats.itch.io/skyofsteel" title="Itch.io link">Itch.io</a></p>
 <p>Contributions are welcome!</p>
 <h1>Table of Contents</h1>
 <ul>
@@ -110,15 +110,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2>Download</h2>
 <p><a href="https://forloveofcats.itch.io/skyofsteel" title="Itch.io link">SkyOfSteel can be downloaded from Itch.io</a></p>
 <h2>Newsletter</h2>
-<p><a href="https://medium.com/@ForLoveOfCats" title="Sunday of Steel Medium link">Read the weekly Sunday of Steel news letter here</a></p>
+<p><a href="https://skyofsteel.org/Posts" title="Blog link">Read the weekly Sunday of Steel news letter here</a></p>
 <h2>Videos</h2>
-<p><a href="https://www.youtube.com/watch?v=k-LEUnC75ug" title="Devlog one video link">View the devlog one video on Youtube (*Very* out of date)</a></p>
-<p><a href="https://www.youtube.com/watch?v=zhd9OqqL-9Q" title="Out of date introductory video link">View the introductory video on Youtube(*Very* out of date)</a></p>
+<p><a href="https://www.youtube.com/watch?v=D9XTBXHrNhc" title="0.1.2 release video link">0.1.2 Release Video</a></p>
 <h2>Building</h2>
 <h3>Prerequisites</h3>
 <ul>
 <li>A functioning installation of Godot Mono 3.1.1 Stable<ul>
-<li>Decently recent versions of both MSBuild and Nuget must be installed (Windows users make sure to install <a href="https://www.mono-project.com/download/stable/#download-win">this</a> and <a href="https://www.microsoft.com/en-us/download/details.aspx?id=56119">this</a>, Ubuntu users make sure to add <a href="https://www.mono-project.com/download/stable/#download-lin">this</a> PPA, update, then install the mono packages)</li>
+<li>Decently recent versions of both MSBuild and Nuget must be installed (Windows users make sure to install <a href="https://www.mono-project.com/download/stable/#download-win">this</a> and <a href="https://www.microsoft.com/en-us/download/details.aspx?id=56119">this</a>, Ubuntu users make sure to add <a href="https://www.mono-project.com/download/stable/#download-lin">this PPA</a>, update, then install the mono packages as for Arch/Manjaro users make sure to install <code>msbuild-stable</code> from the AUR)</li>
 </ul>
 </li>
 </ul>
@@ -132,7 +131,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 </ul>
 <h2>Gameplay</h2>
-<p>The intended gameplay is intended to be a mix of Factorio, SkyBlock, and Unturned in a multiplayer private server setting with high skill movement. As of now multiplayer is fully functional, the building is about 95% functional with proper chunk loading/unloading over network, world saving and loading to/from file, air strafing identical to id Tech 3 and the Source engine, and wall kicking.</p>
+<p>SkyOfSteel is a sandbox building game set in the sky. Envisioned to be a game where one can build intricate factories and sprawling supply chains while engaging in a PVP turf war with your fellow server inhabitants. Enjoy highly fluid movement while destroying others with highly powered weaponry. Fight for technological superiority as you race through a deep tech tree constantly edging out your opponents. When you tire from the vanilla game, the custom gamemode and modding support adds even more depth and content.</p>
+<p>Currently we are remarkably far along in achieving this goal. However we are admittedly not there yet. At the moment we have a fully functional building system, chunk based world save and loading, highly stable multiplayer, Quake/Source engine style air strafing, automatic bunny hopping, wall kicking, and a rudimentary yet extremely flexible system for adding user created gamemodes.</p>
 <h2>Modding</h2>
 <p>SkyOfSteel has a gamemode modding system utilizing <a href="https://github.com/dotnet/roslyn" title="Roslyn Github Page">Roslyn</a> to provide runtime C# compilation. The intention is to allow for fully custom gamemodes to be developed with full access to internal game APIs both server side <em>and</em> client side. In addition there is a full ingame REPL console.</p>
 <p>The gamemode <a class="el" href="classAPI.html">API</a> has a concept of game events. Whenever something occurs ingame it is processed as an "event" which can be filtered and discarded by gamemode scripts programmatically. This allows for a great deal of flexibility before even touching the normal <a class="el" href="classAPI.html">API</a>.</p>
@@ -169,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 </ul>
 <h2>Contact</h2>
-<p>For questions, comments, or to just discuss please join our <a href="https://www.discord.gg/Ag5Yckw" title="Discord Server Invite Link">Discord</a> Also feel free to follow me (ForLoveOfCats) on <a href="https://twitter.com/ForLoveOfCats" title="ForLoveOfCats Twitter Page">Twitter</a> and <a href="https://www.youtube.com/channel/UCbqt-FR7-S2gTWMw0BCEkaw" title="ForLoveOfCats Youtube Channel">Youtube</a></p>
+<p>For questions, comments, or to just discuss please join our <a href="https://www.discord.gg/Ag5Yckw" title="Discord Server Invite Link">Discord</a>, check out our <a href="https://www.youtube.com/channel/UCK3ptxlx1ahtbI8PZa8_Tig" title="SkyOfSteel Youtube Channel">Youtube</a> and support my work on <a href="https://www.patreon.com/ForLoveOfCats" title="ForLoveOfCats Patreon Page">Patreon</a>. Also feel free to follow me on <a href="https://twitter.com/ForLoveOfCats" title="ForLoveOfCats Twitter Page">Twitter</a></p>
 <h2>License</h2>
 <p>SkyOfSteel is licensed under the MIT license and utilizes <a href="https://github.com/dotnet/roslyn" title="Roslyn Github Page">Roslyn</a> and <a href="https://github.com/JamesNK/Newtonsoft.Json">Newtonsoft.Json</a> which are under the Apache-2.0 and the MIT licenses respectively. </p>
 </div></div><!-- contents -->
