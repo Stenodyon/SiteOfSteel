@@ -4,7 +4,6 @@ var searchData=
   ['calculateareas',['CalculateAreas',['../classGridClass.html#aa93dfb986dd5f1c941955f4759885bb9',1,'GridClass']]],
   ['calculatebuildrotation',['CalculateBuildRotation',['../classItems.html#a6fdd49ae9ef5b50616bd5ef9779b0816',1,'Items']]],
   ['cancelpressed',['CancelPressed',['../classWaitConnectingMenu.html#a5f9be70fe12dd3bb05150a9afd2da122',1,'WaitConnectingMenu']]],
-  ['centerposition',['CenterPosition',['../classPlayer.html#a732b05f511b2979b3a888b1efd94b2e4',1,'Player']]],
   ['chunkexists',['ChunkExists',['../classWorld.html#a712c99f43b0f2bcaf98fb40993b0ddb1',1,'World.ChunkExists(Vector3 Position)'],['../classWorld.html#ab0d0a95deec3a88e4fefaf819845e0ad',1,'World.ChunkExists(Tuple&lt; int, int &gt; Position)']]],
   ['chunkrenderdistance',['ChunkRenderDistance',['../classAPI.html#af167f0fe441137769b305de09a668529',1,'API']]],
   ['clampvec3',['ClampVec3',['../classSteelMath.html#a1cb570ba34c61abe360fcc7a6a4d3040',1,'SteelMath']]],

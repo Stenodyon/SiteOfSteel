@@ -2,7 +2,7 @@ var searchData=
 [
   ['cam',['Cam',['../classPlayer.html#a2a24343d330c7c5961c905b03fd223d4',1,'Player']]],
   ['canbuild',['CanBuild',['../classGhost.html#a4642983126ec680d1802f65727ffc7c8',1,'Ghost']]],
-  ['center',['Center',['../classPlayer.html#a0885b46ec570bba9fccd530e90e80e73',1,'Player.Center()'],['../classMenu.html#ab110d0e036ff2ab3af3d92a5924da381',1,'Menu.Center()']]],
+  ['center',['Center',['../classMenu.html#ab110d0e036ff2ab3af3d92a5924da381',1,'Menu']]],
   ['chunkinfolabel',['ChunkInfoLabel',['../classHUD.html#af2a568db6df28ca7744b0d5474af5405',1,'HUD']]],
   ['chunkloaddistances',['ChunkLoadDistances',['../classWorld.html#a7941aea1f6ad2e85b6e5371292d4094b',1,'World']]],
   ['chunkrenderdistance',['ChunkRenderDistance',['../classGame.html#adac3f7edf2f55b5ea736ea25f08d2282',1,'Game']]],
