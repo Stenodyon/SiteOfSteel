@@ -245,13 +245,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.PLATFORM):</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                            {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                PlayerOrientation = Deg2Rad(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4));</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                PlayerOrientation = LoopRotation(Deg2Rad(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4)));</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                <span class="keywordflow">return</span> Base.Translation + (<span class="keyword">new</span> Vector3(0,0,12)).Rotated(<span class="keyword">new</span> Vector3(0,1,0), PlayerOrientation);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                            }</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.WALL):</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                            {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                <span class="keywordtype">float</span> Orientation = SnapToGrid(LoopRotation(PlayerOrientation), 360, 4) + 180;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                <span class="keywordtype">float</span> Orientation = LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4) + 180);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                <span class="keywordflow">if</span>(Orientation != LoopRotation(Round(Base.RotationDegrees.y))</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                   &amp;&amp; LoopRotation(Orientation+180) != LoopRotation(Round(Base.RotationDegrees.y)))</div>
@@ -271,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.SLOPE):</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                            {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                <span class="keywordtype">float</span> Orientation = SnapToGrid(LoopRotation(PlayerOrientation), 360, 4);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                <span class="keywordtype">float</span> Orientation = LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4));</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                <span class="keywordflow">if</span>(Orientation != LoopRotation(Round(Base.RotationDegrees.y))</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                                   &amp;&amp; LoopRotation(Orientation+180) != LoopRotation(Round(Base.RotationDegrees.y)))</div>
@@ -305,7 +305,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        {</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.PLATFORM):</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                            {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                PlayerOrientation = Deg2Rad(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4));</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                PlayerOrientation = LoopRotation(Deg2Rad(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4)));</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                <span class="keywordtype">int</span> yOffset = 6;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
@@ -316,7 +316,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.WALL):</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                            {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                <span class="keywordtype">float</span> Orientation = SnapToGrid(LoopRotation(PlayerOrientation), 360, 4);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                <span class="keywordtype">float</span> Orientation = LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4));</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                <span class="keywordflow">if</span>(Orientation != LoopRotation(Round(Base.RotationDegrees.y))</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                   &amp;&amp; LoopRotation(Orientation+180) != LoopRotation(Round(Base.RotationDegrees.y))) <span class="comment">//Not facing straight on</span></div>
@@ -334,7 +334,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.SLOPE):</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                            {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                <span class="keywordtype">float</span> Orientation = SnapToGrid(LoopRotation(PlayerOrientation), 360, 4);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                <span class="keywordtype">float</span> Orientation = LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4));</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                <span class="keywordflow">if</span>(Orientation != LoopRotation(Round(Base.RotationDegrees.y))</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                   &amp;&amp; LoopRotation(Orientation+180) != LoopRotation(Round(Base.RotationDegrees.y)))</div>
@@ -368,7 +368,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        {</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.PLATFORM):</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                            {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                <span class="keywordtype">float</span> Orientation = SnapToGrid(LoopRotation(PlayerOrientation), 360, 4);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                <span class="keywordtype">float</span> Orientation = LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4));</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                <span class="keywordtype">int</span> yOffset = 6;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
@@ -379,7 +379,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.WALL):</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                            {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                <span class="keywordtype">float</span> Orientation = SnapToGrid(LoopRotation(PlayerOrientation), 360, 4);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                <span class="keywordtype">float</span> Orientation = LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4));</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                <span class="keywordflow">if</span>(Orientation != LoopRotation(Round(Base.RotationDegrees.y))</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                   &amp;&amp; LoopRotation(Orientation+180) != LoopRotation(Round(Base.RotationDegrees.y)))</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                {</div>
@@ -414,7 +414,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                            <span class="keywordflow">case</span>(<a class="code" href="classItems.html#a6774bacbe40c425044480de464c64e40">ID</a>.SLOPE):</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                            {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                <span class="keywordtype">float</span> Orientation = SnapToGrid(LoopRotation(PlayerOrientation), 360, 4);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                <span class="keywordtype">float</span> Orientation = LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4));</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                <span class="keywordflow">if</span>(Orientation != LoopRotation(Round(Base.RotationDegrees.y))</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                   &amp;&amp; LoopRotation(Orientation+180) != LoopRotation(Round(Base.RotationDegrees.y)))</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                {</div>
@@ -481,7 +481,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.WALL || Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.SLOPE)</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                            <span class="keywordflow">return</span> Base.RotationDegrees;</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4), 0);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4)), 0);</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                    })</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            },</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
@@ -490,47 +490,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.PLATFORM)</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4) + 180, 0);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4)) + 180, 0);</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.WALL)</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                        {</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                            <span class="keywordtype">float</span> Orientation = SnapToGrid(PlayerOrientation, 360, 4);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                            <span class="keywordtype">float</span> Orientation = LoopRotation(SnapToGrid(PlayerOrientation, 360, 4));</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 0)</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation), 360, 4), 0);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(Orientation), 360, 4)), 0);</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 1)</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation + 180), 360, 4), 0);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(Orientation + 180), 360, 4)), 0);</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 2)</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation + 180), 360, 4), 0);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(Orientation + 180), 360, 4)), 0);</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                            <span class="keywordflow">if</span>(BuildRotation == 3)</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Orientation), 360, 4), 0);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(Orientation), 360, 4)), 0);</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                        }</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                        <span class="keywordflow">if</span>(Base.<a class="code" href="classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a">Type</a> == ID.SLOPE)</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                        {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                            <span class="keywordflow">if</span>(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4) == LoopRotation(Round(Base.RotationDegrees.y)))</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                            <span class="keywordflow">if</span>(LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4)) == LoopRotation(Round(Base.RotationDegrees.y)))</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                            {</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 0 || BuildRotation == 2)</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y), 360, 4), 0);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(Base.RotationDegrees.y), 360, 4)), 0);</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y + 180), 360, 4), 0);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(Base.RotationDegrees.y + 180), 360, 4)), 0);</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                            }</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                            {</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 0 || BuildRotation == 2)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y + 180), 360, 4), 0);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(Base.RotationDegrees.y + 180), 360, 4)), 0);</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                                <span class="keywordflow">if</span>(BuildRotation == 1 || BuildRotation == 3)</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(Base.RotationDegrees.y), 360, 4), 0);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                                    <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(Base.RotationDegrees.y), 360, 4)), 0);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                            }</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                        }</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4), 0);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4)), 0);</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                    })</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            },</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            {</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                ID.TRIANGLE_WALL,</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                <span class="keyword">new</span> BuildInfoDelegate((<a class="code" href="classStructure.html">Structure</a> Base, <span class="keywordtype">float</span> PlayerOrientation, <span class="keywordtype">int</span> BuildRotation, Vector3 HitRelative) =&gt; {</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, SnapToGrid(LoopRotation(PlayerOrientation), 360, 4), 0);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(0, LoopRotation(SnapToGrid(LoopRotation(PlayerOrientation), 360, 4)), 0);</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                    })</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            }</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        };</div>
