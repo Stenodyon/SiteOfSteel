@@ -12,7 +12,7 @@ var searchData=
   ['placewithname',['PlaceWithName',['../classWorld.html#a2e612f36876e0e0cf3f9a2608a5fbb4c',1,'World']]],
   ['platform',['PLATFORM',['../classItems.html#a6774bacbe40c425044480de464c64e40a8b55a44b49368262df89fd0e17b1a181',1,'Items']]],
   ['platformsize',['PlatformSize',['../classGridClass.html#ac2d865234f531b3e0754d3d7b26d65c8',1,'GridClass.PlatformSize()'],['../classWorld.html#a31f3ba37b5e39d89a976218441fabc50',1,'World.PlatformSize()']]],
-  ['player',['Player',['../classPlayer.html',1,'Player'],['../classPlayer.html#a712a726b07cf901c040116d6d0c5cc66',1,'Player.Player()']]],
+  ['player',['Player',['../classPlayer.html',1,'Player'],['../classJumperRocket.html#a3a87e611c02e256e5631ef6886c1edfd',1,'JumperRocket.Player()'],['../classPlayer.html#a712a726b07cf901c040116d6d0c5cc66',1,'Player.Player()']]],
   ['player_2ecs',['Player.cs',['../Player_8cs.html',1,'']]],
   ['playerpositionlabel',['PlayerPositionLabel',['../classHUD.html#abc40b615d16307b3ddfb8d9259ae23af',1,'HUD']]],
   ['players',['Players',['../classNet.html#a070d439f7753b65f79e5d6857deb0a02',1,'Net']]],

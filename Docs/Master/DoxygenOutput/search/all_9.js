@@ -42,6 +42,5 @@ var searchData=
   ['itempickupdistance',['ItemPickupDistance',['../classPlayer.html#a952529bd40e04dd1856359538905dd10',1,'Player']]],
   ['items',['Items',['../classItems.html',1,'Items'],['../classChunkClass.html#aa956af04da880d6a242704e66d62bd71',1,'ChunkClass.Items()'],['../classItems.html#a765000fb66d1c9b188ad82138f65b1c7',1,'Items.Items()']]],
   ['items_2ecs',['Items.cs',['../Items_8cs.html',1,'']]],
-  ['itemsroot',['ItemsRoot',['../classWorld.html#a8fab1feefd1db38fa89daecc158a4e1b',1,'World']]],
   ['itemthrowpower',['ItemThrowPower',['../classPlayer.html#a7a455bb0fd95a950fdde8861ea4a34d5',1,'Player']]]
 ];

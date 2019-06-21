@@ -4,6 +4,7 @@ var searchData=
   ['additemtochunk',['AddItemToChunk',['../classWorld.html#ab579ff25eb1249b2f593f41603a80814',1,'World']]],
   ['addnicklabel',['AddNickLabel',['../classHUD.html#adca8e7e369d98b5fd95b8b8e8eeb4ab8',1,'HUD']]],
   ['addstructuretochunk',['AddStructureToChunk',['../classWorld.html#ad92f1543fe5b08a8588396ed2befead0',1,'World']]],
+  ['affectedbodies',['AffectedBodies',['../classJumperRocket.html#a20e82cd798cc9a367fdab427b84904cc',1,'JumperRocket']]],
   ['airaccelerate',['AirAccelerate',['../classPlayer.html#a5aba1eb2c3a5238a1ccd2b49ec7989d9',1,'Player']]],
   ['airacceleration',['AirAcceleration',['../classPlayer.html#abc09c674116eea2ec514147d801a1acd',1,'Player']]],
   ['alertlabel',['AlertLabel',['../classConnectMenu.html#a0898a6a6fdebee97b7ce0eed19622316',1,'ConnectMenu.AlertLabel()'],['../classNickMenu.html#adb796b6ab230f82cb0e0b63a6a1d3cbc',1,'NickMenu.AlertLabel()']]],

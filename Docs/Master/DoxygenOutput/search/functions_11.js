@@ -19,5 +19,6 @@ var searchData=
   ['resetslotsvbox',['ResetSlotsVBox',['../classHostMenu.html#ad3dba43f531641d82cc7bd00873f7b57',1,'HostMenu']]],
   ['returnpressed',['ReturnPressed',['../classPauseMenu.html#aa613cb3284324c6877dac14c28ddb45e',1,'PauseMenu']]],
   ['rightmove',['RightMove',['../classPlayer.html#ad31409406e4a4b2ccaff1f187f3c6b9d',1,'Player']]],
+  ['rocketjumper',['RocketJumper',['../classRocketJumper.html#a84c4644d81e986b040a6e84831a760a4',1,'RocketJumper']]],
   ['runconsoleline',['RunConsoleLine',['../classScripting.html#a88d3bc10d7c6fdeef233279590e3e05b',1,'Scripting']]]
 ];

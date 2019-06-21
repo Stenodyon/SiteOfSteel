@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['p',['P',['../classSavedChunk.html#ab2d64c80a12e06ac1689ee5a9f88b001',1,'SavedChunk.P()'],['../classSavedStructure.html#a0f6ccde8ffb686c7308d888720d58bbb',1,'SavedStructure.P()']]],
-  ['pausemenu',['PauseMenu',['../classMenu.html#a4ee928908fa0fa71a567b19ebd0e3844',1,'Menu']]],
-  ['pauseopen',['PauseOpen',['../classMenu.html#a30d98d4b1fe481d3ee023374192ad6fb',1,'Menu']]],
-  ['peerlist',['PeerList',['../classNet.html#a8b2df31254d8a90d1d0e3c0149e0237d',1,'Net']]],
-  ['physicsenabled',['PhysicsEnabled',['../classDroppedItem.html#a24ff4b3be6498e5d37b5a331d7ab439b',1,'DroppedItem']]],
-  ['platformsize',['PlatformSize',['../classGridClass.html#ac2d865234f531b3e0754d3d7b26d65c8',1,'GridClass.PlatformSize()'],['../classWorld.html#a31f3ba37b5e39d89a976218441fabc50',1,'World.PlatformSize()']]],
-  ['playerpositionlabel',['PlayerPositionLabel',['../classHUD.html#abc40b615d16307b3ddfb8d9259ae23af',1,'HUD']]],
-  ['players',['Players',['../classNet.html#a070d439f7753b65f79e5d6857deb0a02',1,'Net']]],
-  ['port',['Port',['../classNet.html#a00281962c44645cb373990271b12da66',1,'Net']]],
-  ['possessed',['Possessed',['../classPlayer.html#a39e4ad34a140c50cb15ad6a9192484cb',1,'Player']]],
-  ['possessedplayer',['PossessedPlayer',['../classGame.html#a657fc98ebb4b162ff245dc672a1c5307',1,'Game']]]
+  ['oldcanbuild',['OldCanBuild',['../classGhost.html#a5cc598702b0068293292898e1422f7ca',1,'Ghost']]],
+  ['oldpositions',['OldPositions',['../classGhost.html#a3ee71c0913eb8e7d826314b9e4a7c3b0',1,'Ghost']]],
+  ['oldrotations',['OldRotations',['../classGhost.html#a90b143672a1667edd915d01d868bff4c',1,'Ghost']]],
+  ['oldtype',['OldType',['../classGhost.html#a3c1d547105422deabe08d19d65d2fe6c',1,'Ghost']]],
+  ['oldvisible',['OldVisible',['../classGhost.html#a8ff78b763d71dc3e9619544ffa2ba36e',1,'Ghost']]],
+  ['ownerid',['OwnerId',['../classStructure.html#a50c45cb093c3259e791c7e47d7cc0b1b',1,'Structure']]],
+  ['ownname',['OwnName',['../classGamemode.html#a23457a1d16e53b768ad1a84322da77fe',1,'Gamemode']]]
 ];

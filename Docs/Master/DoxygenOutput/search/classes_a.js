@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['net',['Net',['../classNet.html',1,'']]],
-  ['nickmenu',['NickMenu',['../classNickMenu.html',1,'']]]
+  ['mainmenu',['MainMenu',['../classMainMenu.html',1,'']]],
+  ['menu',['Menu',['../classMenu.html',1,'']]]
 ];

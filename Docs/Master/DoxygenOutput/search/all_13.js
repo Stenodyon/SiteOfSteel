@@ -18,9 +18,10 @@ var searchData=
   ['tpthrowsfx',['TpThrowSfx',['../classPlayerSfxManager.html#ae0b0281402ef6b4b88f7ab95a3219fee',1,'PlayerSfxManager']]],
   ['tpwallkick',['TpWallKick',['../classPlayerSfxManager.html#ab19fd9f860251062642770711c46c04f',1,'PlayerSfxManager']]],
   ['tpwallkicksfx',['TpWallKickSfx',['../classPlayerSfxManager.html#abdb2eb61aa9ce4bfe403dab9c0ec2cdf',1,'PlayerSfxManager']]],
-  ['translation',['Translation',['../interfaceIInGrid.html#ac50b9ee86629d811b2516b07b6f5b617',1,'IInGrid']]],
+  ['translation',['Translation',['../interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da',1,'IPushable.Translation()'],['../interfaceIInGrid.html#ac50b9ee86629d811b2516b07b6f5b617',1,'IInGrid.Translation()']]],
   ['triangle',['Triangle',['../classHUD.html#a1490290df774a0f1c7d125b9b8895c69',1,'HUD']]],
   ['triangle_5fwall',['TRIANGLE_WALL',['../classItems.html#a6774bacbe40c425044480de464c64e40af7204b86d9f24f48d86d8d593b5a5529',1,'Items']]],
+  ['triggered',['Triggered',['../classJumperRocket.html#a7e97d127ae3205937bf06e325606f7ae',1,'JumperRocket']]],
   ['trycalculatebuildposition',['TryCalculateBuildPosition',['../classItems.html#aae46f32023d876055c26eab7fd156e06',1,'Items']]],
-  ['type',['TYPE',['../classItems.html#a76f20ab3ea0745d32edfbf224fbb8de3',1,'Items.TYPE()'],['../classBindings.html#ad86ddc7f95cd2af837724525fa2fa94b',1,'Bindings.TYPE()'],['../classDroppedItem.html#a5d3d43091f0ac313241a8dc7a149587c',1,'DroppedItem.Type()'],['../classItems_1_1Instance.html#a370e33c7315b936bfe6cf91744c63ea3',1,'Items.Instance.Type()'],['../classBindingObject.html#a344776f595806eb519cf3faef6309ad5',1,'BindingObject.Type()'],['../classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a',1,'Structure.Type()']]]
+  ['type',['Type',['../classDroppedItem.html#a5d3d43091f0ac313241a8dc7a149587c',1,'DroppedItem.Type()'],['../classItems_1_1Instance.html#a370e33c7315b936bfe6cf91744c63ea3',1,'Items.Instance.Type()'],['../classBindingObject.html#a344776f595806eb519cf3faef6309ad5',1,'BindingObject.Type()'],['../classStructure.html#a53d6ba8c0395b35fd91193406dd02b2a',1,'Structure.Type()'],['../classItems.html#a76f20ab3ea0745d32edfbf224fbb8de3',1,'Items.TYPE()'],['../classBindings.html#ad86ddc7f95cd2af837724525fa2fa94b',1,'Bindings.TYPE()']]]
 ];

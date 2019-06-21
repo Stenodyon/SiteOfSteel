@@ -253,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    {</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classGame.html">Game</a>.<a class="code" href="classGame.html#a8fabb92a077015d3dac14460f8f36532">Mode</a>.<a class="code" href="classGamemode.html#af9c2f87278fc379c1d9777a40d268349">ShouldMovementReset</a>())</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            Translation = <span class="keyword">new</span> Vector3(0, 3.4f + 0.15f, 0);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a> = <span class="keyword">new</span> Vector3(0, 3.4f + 0.15f, 0);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <a class="code" href="classPlayer.html#ac03ec8b9fab4448468e0ecfe669d2cbc">Momentum</a> = <span class="keyword">new</span> Vector3();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
@@ -654,7 +654,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                    .Rotated(<span class="keyword">new</span> Vector3(1,0,0), Deg2Rad(-<a class="code" href="classPlayer.html#a4248bd33d63e58f75a47ad88ed2a22f0">LookVertical</a>))</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                    .Rotated(<span class="keyword">new</span> Vector3(0,1,0), Deg2Rad(<a class="code" href="classPlayer.html#a648b8dc110677287f624c875ebc48e9c">LookHorizontal</a>));</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                World.Self.DropItem(<a class="code" href="classPlayer.html#afba22011adb6b3eb7030056845adc62d">Inventory</a>[<a class="code" href="classPlayer.html#ab4f1bfc3b4a60a374a7efbc1acb18f38">InventorySlot</a>].Id, Translation+Cam.Translation, Vel);</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                World.Self.DropItem(<a class="code" href="classPlayer.html#afba22011adb6b3eb7030056845adc62d">Inventory</a>[<a class="code" href="classPlayer.html#ab4f1bfc3b4a60a374a7efbc1acb18f38">InventorySlot</a>].Id, <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>+Cam.Translation, Vel);</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classPlayer.html#afba22011adb6b3eb7030056845adc62d">Inventory</a>[<a class="code" href="classPlayer.html#ab4f1bfc3b4a60a374a7efbc1acb18f38">InventorySlot</a>].Count &gt; 1)</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                    <a class="code" href="classPlayer.html#afba22011adb6b3eb7030056845adc62d">Inventory</a>[<a class="code" href="classPlayer.html#ab4f1bfc3b4a60a374a7efbc1acb18f38">InventorySlot</a>].Count -= 1;</div>
@@ -689,10 +689,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            List&lt;DroppedItem&gt; ToPickUpList = <span class="keyword">new</span> List&lt;DroppedItem&gt;();</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="classDroppedItem.html">DroppedItem</a> Item <span class="keywordflow">in</span> <a class="code" href="classWorld.html">World</a>.<a class="code" href="classWorld.html#ae34cf9ac92cf6d79a02caf2d56b7106e">ItemList</a>)</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;            {</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                <span class="keywordflow">if</span>(Translation.DistanceTo(Item.<a class="code" href="interfaceIInGrid.html#ac50b9ee86629d811b2516b07b6f5b617">Translation</a>) &lt;= <a class="code" href="classPlayer.html#a952529bd40e04dd1856359538905dd10">ItemPickupDistance</a> &amp;&amp; Item.Life &gt;= <a class="code" href="classDroppedItem.html#ae6594be368c138341f8ee04f586af147">DroppedItem.MinPickupLife</a>)</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>.DistanceTo(Item.<a class="code" href="interfaceIInGrid.html#ac50b9ee86629d811b2516b07b6f5b617">Translation</a>) &lt;= <a class="code" href="classPlayer.html#a952529bd40e04dd1856359538905dd10">ItemPickupDistance</a> &amp;&amp; Item.Life &gt;= <a class="code" href="classDroppedItem.html#ae6594be368c138341f8ee04f586af147">DroppedItem.MinPickupLife</a>)</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                {</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                    PhysicsDirectSpaceState State = GetWorld().DirectSpaceState;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                    Godot.Collections.Dictionary Results = State.IntersectRay(Translation, Item.Translation, <span class="keyword">new</span> Godot.Collections.Array{<span class="keyword">this</span>}, 1);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                    Godot.Collections.Dictionary Results = State.IntersectRay(<a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>, Item.Translation, <span class="keyword">new</span> Godot.Collections.Array{<span class="keyword">this</span>}, 1);</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                    <span class="keywordflow">if</span>(Results.Count &lt;= 0)</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                        ToPickUpList.Add(Item);</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                }</div>
@@ -816,7 +816,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <a class="code" href="classPlayer.html#a380b565ee1fa38bf086fb2c6c7c82b87">LastMomentumY</a> = Momentum.y;</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        Vector3 OldPos = Translation;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        Vector3 OldPos = <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>;</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classPlayer.html#abceda65c999f3787d043092ac74833c7">FlyMode</a>)</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        {</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;            Vector3 FlatVel = <a class="code" href="classPlayer.html#ac03ec8b9fab4448468e0ecfe669d2cbc">Momentum</a>;</div>
@@ -850,13 +850,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                SfxManager.FpWallKick();</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;            }</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        }</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        Vector3 NewPos = Translation;</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        Translation = OldPos;</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        Vector3 NewPos = <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a> = OldPos;</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        <span class="keywordflow">if</span>(NewPos != OldPos)</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        {</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classGame.html">Game</a>.<a class="code" href="classGame.html#a8fabb92a077015d3dac14460f8f36532">Mode</a>.<a class="code" href="classGamemode.html#a25ee42c135457544e9551c70b7ebea77">ShouldPlayerMove</a>(NewPos))</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;            {</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                Translation = NewPos;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a> = NewPos;</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;            }</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        }</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
@@ -865,11 +865,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            Momentum.y = -1f;</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        }</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        Net.SteelRpcUnreliable(<span class="keyword">this</span>, nameof(<a class="code" href="classPlayer.html#ac651dee0e80d1fe60fc9cafda72e5710">Update</a>), Translation, RotationDegrees);</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        Net.SteelRpcUnreliable(<span class="keyword">this</span>, nameof(<a class="code" href="classPlayer.html#ac651dee0e80d1fe60fc9cafda72e5710">Update</a>), <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>, RotationDegrees);</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classWorld.html">World</a>.<a class="code" href="classWorld.html#a8e28a7ce76cf6c242e81790ac4c7ad47">GetChunkTuple</a>(Translation).Equals(<a class="code" href="classPlayer.html#aa36f605a9c1de629f607962cf6154e3f">CurrentChunk</a>))</div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        {</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;            <a class="code" href="classPlayer.html#aa36f605a9c1de629f607962cf6154e3f">CurrentChunk</a> = World.GetChunkTuple(Translation);</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;            <a class="code" href="classPlayer.html#aa36f605a9c1de629f607962cf6154e3f">CurrentChunk</a> = World.GetChunkTuple(<a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>);</div>
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;            Net.UnloadAndRequestChunks();</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        }</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    }</div>
@@ -880,7 +880,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    {</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classGame.html">Game</a>.<a class="code" href="classGame.html#a8fabb92a077015d3dac14460f8f36532">Mode</a>.<a class="code" href="classGamemode.html#ab83e8c906b405e0377c9004e5ce9da1f">ShouldSyncRemotePlayerPosition</a>(<a class="code" href="classPlayer.html#ae8b62f5f01eef62c98db37b5efa8215b">Id</a>, Position))</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        {</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;            Translation = Position;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;            <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a> = Position;</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        }</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classGame.html">Game</a>.<a class="code" href="classGame.html#a8fabb92a077015d3dac14460f8f36532">Mode</a>.<a class="code" href="classGamemode.html#a2d76937dbf99443536426b6bf0d107a1">ShouldSyncRemotePlayerRotation</a>(<a class="code" href="classPlayer.html#ae8b62f5f01eef62c98db37b5efa8215b">Id</a>, Rotation))</div>
@@ -1011,6 +1011,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classPlayer_html_a5aba1eb2c3a5238a1ccd2b49ec7989d9"><div class="ttname"><a href="classPlayer.html#a5aba1eb2c3a5238a1ccd2b49ec7989d9">Player.AirAccelerate</a></div><div class="ttdeci">Vector3 AirAccelerate(Vector3 Vel, Vector3 WishDir, float Delta)</div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00580">Player.cs:580</a></div></div>
 <div class="ttc" id="interfaceIPushable_html"><div class="ttname"><a href="interfaceIPushable.html">IPushable</a></div><div class="ttdef"><b>Definition:</b> <a href="IPushable_8cs_source.html#l00004">IPushable.cs:4</a></div></div>
 <div class="ttc" id="classPlayer_html_aa36f605a9c1de629f607962cf6154e3f"><div class="ttname"><a href="classPlayer.html#aa36f605a9c1de629f607962cf6154e3f">Player.CurrentChunk</a></div><div class="ttdeci">System.Tuple&lt; int, int &gt; CurrentChunk</div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00037">Player.cs:37</a></div></div>
+<div class="ttc" id="interfaceIPushable_html_a799afaa8fe50e5ef1d1e3866d3cff6da"><div class="ttname"><a href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">IPushable.Translation</a></div><div class="ttdeci">Vector3 Translation</div><div class="ttdef"><b>Definition:</b> <a href="IPushable_8cs_source.html#l00006">IPushable.cs:6</a></div></div>
 <div class="ttc" id="classPlayer_html_a9382943d1a68f9d54376f1bd8a550efb"><div class="ttname"><a href="classPlayer.html#a9382943d1a68f9d54376f1bd8a550efb">Player.ItemGive</a></div><div class="ttdeci">void ItemGive(Items.Instance ToGive)</div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00171">Player.cs:171</a></div></div>
 <div class="ttc" id="classPlayer_html_ac2204deb48aeff469da562a297c3442f"><div class="ttname"><a href="classPlayer.html#ac2204deb48aeff469da562a297c3442f">Player.IsSecondaryFiring</a></div><div class="ttdeci">bool IsSecondaryFiring</div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00062">Player.cs:62</a></div></div>
 <div class="ttc" id="classPlayer_html"><div class="ttname"><a href="classPlayer.html">Player</a></div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00008">Player.cs:8</a></div></div>
