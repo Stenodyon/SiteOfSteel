@@ -100,6 +100,7 @@ Inheritance diagram for DroppedItem:</div>
   <img src="classDroppedItem.png" usemap="#DroppedItem_map" alt=""/>
   <map id="DroppedItem_map" name="DroppedItem_map">
 <area href="interfaceIInGrid.html" alt="IInGrid" shape="rect" coords="105,0,200,24"/>
+<area href="interfaceIPushable.html" alt="IPushable" shape="rect" coords="210,0,305,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -109,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a24aebce8994260f2ccc1746709ebc44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f900f64acae338cf58d4a2917b89c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDroppedItem.html#a65f900f64acae338cf58d4a2917b89c3">GridUpdate</a> ()</td></tr>
 <tr class="separator:a65f900f64acae338cf58d4a2917b89c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7628d58d493612abe10ff8e49d2fb65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDroppedItem.html#ac7628d58d493612abe10ff8e49d2fb65">ApplyPush</a> (Vector3 Push)</td></tr>
+<tr class="separator:ac7628d58d493612abe10ff8e49d2fb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a767842ad34983535915483fd92f75a21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDroppedItem.html#a767842ad34983535915483fd92f75a21">Remove</a> ()</td></tr>
 <tr class="separator:a767842ad34983535915483fd92f75a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab83f82618cb9c715b014853a8bc7517c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDroppedItem.html#ab83f82618cb9c715b014853a8bc7517c">_PhysicsProcess</a> (float Delta)</td></tr>
@@ -150,6 +153,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_interfaceIInGrid"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceIInGrid')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceIInGrid.html">IInGrid</a></td></tr>
 <tr class="memitem:ac50b9ee86629d811b2516b07b6f5b617 inherit properties_interfaceIInGrid"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceIInGrid.html#ac50b9ee86629d811b2516b07b6f5b617">Translation</a><code> [get, set]</code></td></tr>
 <tr class="separator:ac50b9ee86629d811b2516b07b6f5b617 inherit properties_interfaceIInGrid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interfaceIPushable"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceIPushable')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceIPushable.html">IPushable</a></td></tr>
+<tr class="memitem:a799afaa8fe50e5ef1d1e3866d3cff6da inherit properties_interfaceIPushable"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a><code> [get, set]</code></td></tr>
+<tr class="separator:a799afaa8fe50e5ef1d1e3866d3cff6da inherit properties_interfaceIPushable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -177,7 +183,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="DroppedItem_8cs_source.html#l00048">48</a> of file <a class="el" href="DroppedItem_8cs_source.html">DroppedItem.cs</a>.</p>
+<p>Definition at line <a class="el" href="DroppedItem_8cs_source.html#l00055">55</a> of file <a class="el" href="DroppedItem_8cs_source.html">DroppedItem.cs</a>.</p>
 
 </div>
 </div>
@@ -203,6 +209,34 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="DroppedItem_8cs_source.html#l00021">21</a> of file <a class="el" href="DroppedItem_8cs_source.html">DroppedItem.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7628d58d493612abe10ff8e49d2fb65"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DroppedItem.ApplyPush </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>Push</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceIPushable.html#a885d6ec912de8fc5d8fddb4a13643775">IPushable</a>.</p>
+
+<p>Definition at line <a class="el" href="DroppedItem_8cs_source.html#l00041">41</a> of file <a class="el" href="DroppedItem_8cs_source.html">DroppedItem.cs</a>.</p>
 
 </div>
 </div>
@@ -254,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="DroppedItem_8cs_source.html#l00041">41</a> of file <a class="el" href="DroppedItem_8cs_source.html">DroppedItem.cs</a>.</p>
+<p>Definition at line <a class="el" href="DroppedItem_8cs_source.html#l00048">48</a> of file <a class="el" href="DroppedItem_8cs_source.html">DroppedItem.cs</a>.</p>
 
 </div>
 </div>
