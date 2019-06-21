@@ -4,6 +4,7 @@ var searchData=
   ['recievenick',['RecieveNick',['../classNet.html#a3b998694e12abd275fdc8a175ede7337',1,'Net']]],
   ['reloadgm',['ReloadGm',['../classAPI.html#a34ddcf7b92cf30fc909739c6478374cb',1,'API']]],
   ['reloadsave',['ReloadSave',['../classAPI.html#ac9c553d84d7f954c3c596878eb599944',1,'API']]],
+  ['remotefire',['RemoteFire',['../classRocketJumper.html#a93c815ff6e3e05d30a2cfd2fb3cceae9',1,'RocketJumper']]],
   ['remove',['Remove',['../classDroppedItem.html#a767842ad34983535915483fd92f75a21',1,'DroppedItem.Remove()'],['../classStructure.html#a5314c98b1ce0e0dd2bbb00f279cc1e30',1,'Structure.Remove()']]],
   ['removedroppeditem',['RemoveDroppedItem',['../classWorld.html#ae97c745f753243c8678daee000657d1b',1,'World']]],
   ['removenicklabel',['RemoveNickLabel',['../classHUD.html#a01312ea566037483a3c81a3d31eba95a',1,'HUD']]],
@@ -19,6 +20,6 @@ var searchData=
   ['resetslotsvbox',['ResetSlotsVBox',['../classHostMenu.html#ad3dba43f531641d82cc7bd00873f7b57',1,'HostMenu']]],
   ['returnpressed',['ReturnPressed',['../classPauseMenu.html#aa613cb3284324c6877dac14c28ddb45e',1,'PauseMenu']]],
   ['rightmove',['RightMove',['../classPlayer.html#ad31409406e4a4b2ccaff1f187f3c6b9d',1,'Player']]],
-  ['rocketjumper',['RocketJumper',['../classRocketJumper.html#a84c4644d81e986b040a6e84831a760a4',1,'RocketJumper']]],
+  ['rocketjumper',['RocketJumper',['../classRocketJumper.html#a776fdca843c9d2a1a1af2815fb9910d3',1,'RocketJumper.RocketJumper()'],['../classRocketJumper.html#a84c4644d81e986b040a6e84831a760a4',1,'RocketJumper.RocketJumper()']]],
   ['runconsoleline',['RunConsoleLine',['../classScripting.html#a88d3bc10d7c6fdeef233279590e3e05b',1,'Scripting']]]
 ];

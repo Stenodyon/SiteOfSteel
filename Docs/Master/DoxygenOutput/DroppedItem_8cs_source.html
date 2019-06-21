@@ -133,60 +133,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a> += Push;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classDroppedItem.html#a65f900f64acae338cf58d4a2917b89c3">GridUpdate</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classDroppedItem.html#a767842ad34983535915483fd92f75a21">   48</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classDroppedItem.html#a767842ad34983535915483fd92f75a21">Remove</a>()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        World.Self.RemoveDroppedItem(this.GetName());</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        World.ItemList.Remove(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classDroppedItem.html#ab83f82618cb9c715b014853a8bc7517c">   55</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code" href="classDroppedItem.html#ab83f82618cb9c715b014853a8bc7517c">_PhysicsProcess</a>(<span class="keywordtype">float</span> Delta)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        Mesh.SetRotationDegrees(<span class="keyword">new</span> Vector3(0, <a class="code" href="classDroppedItem.html#a69ba04f5789d319e7096c84ba89ef55a">Mesh</a>.RotationDegrees.y+(360*Delta*<a class="code" href="classDroppedItem.html#ac7637f7c67c1672bd05dd6783399fe08">RPS</a>), 0));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classDroppedItem.html#a6a42c4fbdeb4a5f539c457b75fe1ba24">Life</a> += Delta;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classDroppedItem.html#a24ff4b3be6498e5d37b5a331d7ab439b">PhysicsEnabled</a>)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a> = MoveAndSlide(<a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>, <span class="keyword">new</span> Vector3(0,1,0), floorMaxAngle:50);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="classDroppedItem.html#aeefcd62dee470961cd1ba454a9428d29">CurrentChunkTuple</a>.Equals(<a class="code" href="classWorld.html">World</a>.<a class="code" href="classWorld.html#a8e28a7ce76cf6c242e81790ac4c7ad47">GetChunkTuple</a>(<a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>))) <span class="comment">//We just crossed into a different chunk</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                World.Chunks[<a class="code" href="classDroppedItem.html#aeefcd62dee470961cd1ba454a9428d29">CurrentChunkTuple</a>].Items.Remove(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="classDroppedItem.html#aeefcd62dee470961cd1ba454a9428d29">CurrentChunkTuple</a> = World.GetChunkTuple(<a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                World.AddItemToChunk(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                Net.SteelRpc(<a class="code" href="classWorld.html#acefe97e9014ccecb686f45b83442dc50">World.Self</a>, nameof(<a class="code" href="classWorld.html">World</a>.<a class="code" href="classWorld.html#a7d7fb74853603f7020615a62227cbe66">DropOrUpdateItem</a>), <a class="code" href="classDroppedItem.html#a5d3d43091f0ac313241a8dc7a149587c">Type</a>, <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>, <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>, GetName());</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">if</span>(IsOnFloor())</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="comment">//Doing friction</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                Vector3 Horz = <span class="keyword">new</span> Vector3(<a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>.x, 0, <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>.z);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                Horz = Horz.Normalized() * Mathf.Clamp(Horz.Length() - (<a class="code" href="classDroppedItem.html#a895d5e94e52e517acd5c793ed2d93216">Friction</a>*Delta), 0, Mathf.Abs(<a class="code" href="classDroppedItem.html#a332919cd0e7eafb78e157b1e5555efbb">MaxFallSpeed</a>));</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                Momentum.x = Horz.x;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                Momentum.z = Horz.z;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">if</span>(Horz.Length() &lt;= 0)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <a class="code" href="classDroppedItem.html#a24ff4b3be6498e5d37b5a331d7ab439b">PhysicsEnabled</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classDroppedItem.html#a24ff4b3be6498e5d37b5a331d7ab439b">PhysicsEnabled</a>)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                Momentum.y -= <a class="code" href="classDroppedItem.html#ae877307aaf10614d7715593b96c880fc">Gravity</a>*Delta;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>.y &lt; <a class="code" href="classDroppedItem.html#a332919cd0e7eafb78e157b1e5555efbb">MaxFallSpeed</a>)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    Momentum.y = <a class="code" href="classDroppedItem.html#a332919cd0e7eafb78e157b1e5555efbb">MaxFallSpeed</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a> = <span class="keyword">new</span> Vector3(0,0,0);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                World.Grid.AddItem(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(Net.Work.IsNetworkServer())</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Net.SteelRpc(<a class="code" href="classWorld.html">World</a>.<a class="code" href="classWorld.html#acefe97e9014ccecb686f45b83442dc50">Self</a>, nameof(<a class="code" href="classWorld.html">World</a>.<a class="code" href="classWorld.html#a7d7fb74853603f7020615a62227cbe66">DropOrUpdateItem</a>), <a class="code" href="classDroppedItem.html#a5d3d43091f0ac313241a8dc7a149587c">Type</a>, <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>, <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>, GetName());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classDroppedItem.html#a767842ad34983535915483fd92f75a21">   51</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classDroppedItem.html#a767842ad34983535915483fd92f75a21">Remove</a>()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        World.Self.RemoveDroppedItem(this.GetName());</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        World.ItemList.Remove(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classDroppedItem.html#ab83f82618cb9c715b014853a8bc7517c">   58</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code" href="classDroppedItem.html#ab83f82618cb9c715b014853a8bc7517c">_PhysicsProcess</a>(<span class="keywordtype">float</span> Delta)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        Mesh.SetRotationDegrees(<span class="keyword">new</span> Vector3(0, <a class="code" href="classDroppedItem.html#a69ba04f5789d319e7096c84ba89ef55a">Mesh</a>.RotationDegrees.y+(360*Delta*<a class="code" href="classDroppedItem.html#ac7637f7c67c1672bd05dd6783399fe08">RPS</a>), 0));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classDroppedItem.html#a6a42c4fbdeb4a5f539c457b75fe1ba24">Life</a> += Delta;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classDroppedItem.html#a24ff4b3be6498e5d37b5a331d7ab439b">PhysicsEnabled</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a> = MoveAndSlide(<a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>, <span class="keyword">new</span> Vector3(0,1,0), floorMaxAngle:50);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="classDroppedItem.html#aeefcd62dee470961cd1ba454a9428d29">CurrentChunkTuple</a>.Equals(<a class="code" href="classWorld.html">World</a>.<a class="code" href="classWorld.html#a8e28a7ce76cf6c242e81790ac4c7ad47">GetChunkTuple</a>(<a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>))) <span class="comment">//We just crossed into a different chunk</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                World.Chunks[<a class="code" href="classDroppedItem.html#aeefcd62dee470961cd1ba454a9428d29">CurrentChunkTuple</a>].Items.Remove(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="classDroppedItem.html#aeefcd62dee470961cd1ba454a9428d29">CurrentChunkTuple</a> = World.GetChunkTuple(<a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                World.AddItemToChunk(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                Net.SteelRpc(<a class="code" href="classWorld.html#acefe97e9014ccecb686f45b83442dc50">World.Self</a>, nameof(<a class="code" href="classWorld.html">World</a>.<a class="code" href="classWorld.html#a7d7fb74853603f7020615a62227cbe66">DropOrUpdateItem</a>), <a class="code" href="classDroppedItem.html#a5d3d43091f0ac313241a8dc7a149587c">Type</a>, <a class="code" href="interfaceIPushable.html#a799afaa8fe50e5ef1d1e3866d3cff6da">Translation</a>, <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>, GetName());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">if</span>(IsOnFloor())</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="comment">//Doing friction</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                Vector3 Horz = <span class="keyword">new</span> Vector3(<a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>.x, 0, <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>.z);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                Horz = Horz.Normalized() * Mathf.Clamp(Horz.Length() - (<a class="code" href="classDroppedItem.html#a895d5e94e52e517acd5c793ed2d93216">Friction</a>*Delta), 0, Mathf.Abs(<a class="code" href="classDroppedItem.html#a332919cd0e7eafb78e157b1e5555efbb">MaxFallSpeed</a>));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                Momentum.x = Horz.x;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                Momentum.z = Horz.z;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">if</span>(Horz.Length() &lt;= 0)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    <a class="code" href="classDroppedItem.html#a24ff4b3be6498e5d37b5a331d7ab439b">PhysicsEnabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classDroppedItem.html#a24ff4b3be6498e5d37b5a331d7ab439b">PhysicsEnabled</a>)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                Momentum.y -= <a class="code" href="classDroppedItem.html#ae877307aaf10614d7715593b96c880fc">Gravity</a>*Delta;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a>.y &lt; <a class="code" href="classDroppedItem.html#a332919cd0e7eafb78e157b1e5555efbb">MaxFallSpeed</a>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    Momentum.y = <a class="code" href="classDroppedItem.html#a332919cd0e7eafb78e157b1e5555efbb">MaxFallSpeed</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <a class="code" href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">Momentum</a> = <span class="keyword">new</span> Vector3(0,0,0);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                World.Grid.AddItem(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="ttc" id="classDroppedItem_html_a2e2370dcc2da51768077340f26e4f376"><div class="ttname"><a href="classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376">DroppedItem.Momentum</a></div><div class="ttdeci">Vector3 Momentum</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00014">DroppedItem.cs:14</a></div></div>
 <div class="ttc" id="classDroppedItem_html_a65f900f64acae338cf58d4a2917b89c3"><div class="ttname"><a href="classDroppedItem.html#a65f900f64acae338cf58d4a2917b89c3">DroppedItem.GridUpdate</a></div><div class="ttdeci">void GridUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00034">DroppedItem.cs:34</a></div></div>
 <div class="ttc" id="classDroppedItem_html_ae6594be368c138341f8ee04f586af147"><div class="ttname"><a href="classDroppedItem.html#ae6594be368c138341f8ee04f586af147">DroppedItem.MinPickupLife</a></div><div class="ttdeci">static float MinPickupLife</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00011">DroppedItem.cs:11</a></div></div>
@@ -206,8 +209,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classDroppedItem_html_a24aebce8994260f2ccc1746709ebc44d"><div class="ttname"><a href="classDroppedItem.html#a24aebce8994260f2ccc1746709ebc44d">DroppedItem._Ready</a></div><div class="ttdeci">override void _Ready()</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00021">DroppedItem.cs:21</a></div></div>
 <div class="ttc" id="classDroppedItem_html_a24ff4b3be6498e5d37b5a331d7ab439b"><div class="ttname"><a href="classDroppedItem.html#a24ff4b3be6498e5d37b5a331d7ab439b">DroppedItem.PhysicsEnabled</a></div><div class="ttdeci">bool PhysicsEnabled</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00015">DroppedItem.cs:15</a></div></div>
 <div class="ttc" id="classDroppedItem_html_ac7628d58d493612abe10ff8e49d2fb65"><div class="ttname"><a href="classDroppedItem.html#ac7628d58d493612abe10ff8e49d2fb65">DroppedItem.ApplyPush</a></div><div class="ttdeci">void ApplyPush(Vector3 Push)</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00041">DroppedItem.cs:41</a></div></div>
-<div class="ttc" id="classDroppedItem_html_ab83f82618cb9c715b014853a8bc7517c"><div class="ttname"><a href="classDroppedItem.html#ab83f82618cb9c715b014853a8bc7517c">DroppedItem._PhysicsProcess</a></div><div class="ttdeci">override void _PhysicsProcess(float Delta)</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00055">DroppedItem.cs:55</a></div></div>
-<div class="ttc" id="classDroppedItem_html_a767842ad34983535915483fd92f75a21"><div class="ttname"><a href="classDroppedItem.html#a767842ad34983535915483fd92f75a21">DroppedItem.Remove</a></div><div class="ttdeci">void Remove()</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00048">DroppedItem.cs:48</a></div></div>
+<div class="ttc" id="classDroppedItem_html_ab83f82618cb9c715b014853a8bc7517c"><div class="ttname"><a href="classDroppedItem.html#ab83f82618cb9c715b014853a8bc7517c">DroppedItem._PhysicsProcess</a></div><div class="ttdeci">override void _PhysicsProcess(float Delta)</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00058">DroppedItem.cs:58</a></div></div>
+<div class="ttc" id="classDroppedItem_html_a767842ad34983535915483fd92f75a21"><div class="ttname"><a href="classDroppedItem.html#a767842ad34983535915483fd92f75a21">DroppedItem.Remove</a></div><div class="ttdeci">void Remove()</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00051">DroppedItem.cs:51</a></div></div>
 <div class="ttc" id="classDroppedItem_html_aeefcd62dee470961cd1ba454a9428d29"><div class="ttname"><a href="classDroppedItem.html#aeefcd62dee470961cd1ba454a9428d29">DroppedItem.CurrentChunkTuple</a></div><div class="ttdeci">System.Tuple&lt; int, int &gt; CurrentChunkTuple</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00013">DroppedItem.cs:13</a></div></div>
 <div class="ttc" id="classDroppedItem_html_a69ba04f5789d319e7096c84ba89ef55a"><div class="ttname"><a href="classDroppedItem.html#a69ba04f5789d319e7096c84ba89ef55a">DroppedItem.Mesh</a></div><div class="ttdeci">MeshInstance Mesh</div><div class="ttdef"><b>Definition:</b> <a href="DroppedItem_8cs_source.html#l00019">DroppedItem.cs:19</a></div></div>
 <div class="ttc" id="interfaceIPushable_html"><div class="ttname"><a href="interfaceIPushable.html">IPushable</a></div><div class="ttdef"><b>Definition:</b> <a href="IPushable_8cs_source.html#l00004">IPushable.cs:4</a></div></div>

@@ -8,6 +8,7 @@ var searchData=
   ['ipedit',['IpEdit',['../classConnectMenu.html#ae86839ec5c9c0da44eb0514751d3d6d6',1,'ConnectMenu']]],
   ['iscrouching',['IsCrouching',['../classPlayer.html#a79992b7d78e692089f4b921937193e05',1,'Player']]],
   ['isjumping',['IsJumping',['../classPlayer.html#acac5478896fc08c0da58ff9aa6514c08',1,'Player']]],
+  ['islocal',['IsLocal',['../classJumperRocket.html#a3f61d00957e81980db22b40fc18f65fe',1,'JumperRocket']]],
   ['isopen',['IsOpen',['../classConsole.html#a35784baa7adf50bb1e19cbe31a8948c4',1,'Console.IsOpen()'],['../classConsoleWindow.html#afb6f8e140f4abc31ac417f07997541b1',1,'ConsoleWindow.IsOpen()'],['../classMenu.html#af434e1f483fb63a55fd1b9a5e5da12fc',1,'Menu.IsOpen()'],['../classWorld.html#a8734595f82c8d5fc3fdd797761688234',1,'World.IsOpen()']]],
   ['isprimaryfiring',['IsPrimaryFiring',['../classPlayer.html#af471396a70a286f05b001d14b61643e6',1,'Player']]],
   ['issecondaryfiring',['IsSecondaryFiring',['../classPlayer.html#ac2204deb48aeff469da562a297c3442f',1,'Player']]],
