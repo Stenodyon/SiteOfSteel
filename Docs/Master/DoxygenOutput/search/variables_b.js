@@ -13,6 +13,7 @@ var searchData=
   ['meshes',['Meshes',['../classItems.html#a5bfc0ddbddcccb4bb9f329a2a48bf04a',1,'Items']]],
   ['message',['Message',['../classWaitConnectingMenu.html#abd41493dddabf57749e62f9b40408629',1,'WaitConnectingMenu']]],
   ['minpickuplife',['MinPickupLife',['../classDroppedItem.html#ae6594be368c138341f8ee04f586af147',1,'DroppedItem']]],
+  ['minrocketdistance',['MinRocketDistance',['../classRocketJumper.html#a1212554c9292361761e1f927d17f09fc',1,'RocketJumper']]],
   ['mode',['Mode',['../classGame.html#a8fabb92a077015d3dac14460f8f36532',1,'Game']]],
   ['momentum',['Momentum',['../classDroppedItem.html#a2e2370dcc2da51768077340f26e4f376',1,'DroppedItem.Momentum()'],['../classJumperRocket.html#a239954b510610de086c92e5e4e442361',1,'JumperRocket.Momentum()'],['../classPlayer.html#ac03ec8b9fab4448468e0ecfe669d2cbc',1,'Player.Momentum()']]],
   ['mousedivisor',['MouseDivisor',['../classGame.html#a54940e115c45637b96dfa0e21370146c',1,'Game']]],
