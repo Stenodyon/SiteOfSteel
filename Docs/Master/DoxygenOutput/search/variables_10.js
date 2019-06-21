@@ -10,7 +10,6 @@ var searchData=
   ['renametoolbar',['RenameToolbar',['../classHostMenu.html#ab6775a0cfff91d1858968fc304eea807',1,'HostMenu']]],
   ['rightaxis',['RightAxis',['../classPlayer.html#a586d83e2ac46eb3f080884ff1aff787d',1,'Player']]],
   ['rightsens',['RightSens',['../classPlayer.html#a9c135d11f60fd2d64f233e355a6ee534',1,'Player']]],
-  ['rocketarmtime',['RocketArmTime',['../classRocketJumper.html#ada41ee1db207004ebb9b6908b1b08606',1,'RocketJumper']]],
   ['rocketfusetime',['RocketFuseTime',['../classRocketJumper.html#a9a286ae821e8f7ecfe8c1e8abeee75f9',1,'RocketJumper']]],
   ['rockethorizontalmultiplyer',['RocketHorizontalMultiplyer',['../classRocketJumper.html#a13388f62766ec38e2852c1295a229c49',1,'RocketJumper']]],
   ['rocketstart',['RocketStart',['../classPlayer.html#a1fb4705797b4375e78635fe981d5a6e3',1,'Player']]],
