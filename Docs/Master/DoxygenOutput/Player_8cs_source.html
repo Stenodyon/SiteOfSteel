@@ -789,7 +789,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                Vector3 WishDir = ClampVec3(<span class="keyword">new</span> Vector3(X, 0, Z), 0, 1) * SpeedLimit;</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;                WishDir = WishDir.Rotated(<span class="keyword">new</span> Vector3(0,1,0), Deg2Rad(<a class="code" href="classPlayer.html#a648b8dc110677287f624c875ebc48e9c">LookHorizontal</a>));</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                <span class="keywordtype">float</span> Multiplyer = Clamp(SpeedLimit - <a class="code" href="classPlayer.html#ac03ec8b9fab4448468e0ecfe669d2cbc">Momentum</a>.Flatten().Length(), 0, SpeedLimit) / SpeedLimit;</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                <span class="keywordtype">float</span> Multiplyer = Clamp(SpeedLimit - <a class="code" href="classPlayer.html#ac03ec8b9fab4448468e0ecfe669d2cbc">Momentum</a>.Flattened().Length(), 0, SpeedLimit) / SpeedLimit;</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                WishDir *= Multiplyer;</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                Momentum.x += WishDir.x;</div>
