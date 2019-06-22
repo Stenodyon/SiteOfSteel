@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['net_2ecs',['Net.cs',['../Net_8cs.html',1,'']]],
-  ['nickmenu_2ecs',['NickMenu.cs',['../NickMenu_8cs.html',1,'']]]
+  ['mainmenu_2ecs',['MainMenu.cs',['../MainMenu_8cs.html',1,'']]],
+  ['menu_2ecs',['Menu.cs',['../Menu_8cs.html',1,'']]]
 ];

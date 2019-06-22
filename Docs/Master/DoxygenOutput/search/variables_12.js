@@ -6,6 +6,7 @@ var searchData=
   ['toolbarscrollseperator',['ToolbarScrollSeperator',['../classHostMenu.html#aea3c9e363cfbaa2919c70d57d7728564',1,'HostMenu']]],
   ['tplandsfx',['TpLandSfx',['../classPlayerSfxManager.html#ae36946b4c5417555544f701b2d083e3c',1,'PlayerSfxManager']]],
   ['tppickupsfx',['TpPickupSfx',['../classPlayerSfxManager.html#ae43796c640017b97d2687b523416aa5f',1,'PlayerSfxManager']]],
+  ['tprocketfiresfx',['TpRocketFireSfx',['../classPlayerSfxManager.html#a849fb116061af9935c8452df69ae4aab',1,'PlayerSfxManager']]],
   ['tpthrowsfx',['TpThrowSfx',['../classPlayerSfxManager.html#ae0b0281402ef6b4b88f7ab95a3219fee',1,'PlayerSfxManager']]],
   ['tpwallkicksfx',['TpWallKickSfx',['../classPlayerSfxManager.html#abdb2eb61aa9ce4bfe403dab9c0ec2cdf',1,'PlayerSfxManager']]],
   ['triangle',['Triangle',['../classHUD.html#a1490290df774a0f1c7d125b9b8895c69',1,'HUD']]],

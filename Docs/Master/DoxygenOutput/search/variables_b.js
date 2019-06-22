@@ -4,6 +4,7 @@ var searchData=
   ['mainscript',['MainScript',['../classGmConfigClass.html#a641695fc44495d43f4a10f1a167f3080',1,'GmConfigClass']]],
   ['maxfallspeed',['MaxFallSpeed',['../classDroppedItem.html#a332919cd0e7eafb78e157b1e5555efbb',1,'DroppedItem']]],
   ['maxjumplength',['MaxJumpLength',['../classPlayer.html#aa06732cd3f6955f9c36de519ce4fd32f',1,'Player']]],
+  ['maxlife',['MaxLife',['../classExplodeSfx.html#a2545d3dcb5e62f4f59d7af757d1803e0',1,'ExplodeSfx']]],
   ['maxplayers',['MaxPlayers',['../classGame.html#aff4e8e31b7687e96cb443a25e7586974',1,'Game']]],
   ['maxrocketdistance',['MaxRocketDistance',['../classRocketJumper.html#a577763f2a4de186d3b97ea9123302426',1,'RocketJumper']]],
   ['maxrocketpush',['MaxRocketPush',['../classRocketJumper.html#a1c5e5af31906c1b0ad11b7db1c317d51',1,'RocketJumper']]],

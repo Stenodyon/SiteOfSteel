@@ -4,6 +4,7 @@ var searchData=
   ['forwardsens',['ForwardSens',['../classPlayer.html#a97a080a05fd57146c3e777c48c1b3573',1,'Player']]],
   ['fplandsfx',['FpLandSfx',['../classPlayerSfxManager.html#abd208eb2b4cfe0690301b5936c61ac03',1,'PlayerSfxManager']]],
   ['fppickupsfx',['FpPickupSfx',['../classPlayerSfxManager.html#afe2411121717bb14e095b89f5e8f84f8',1,'PlayerSfxManager']]],
+  ['fprocketfiresfx',['FpRocketFireSfx',['../classPlayerSfxManager.html#a65a61d6ed923bd269a473904f50a55be',1,'PlayerSfxManager']]],
   ['fpslabel',['FPSLabel',['../classHUD.html#ae2d67215a1ca8ee4a50c4f6fbdb3bafa',1,'HUD']]],
   ['fpthrowsfx',['FpThrowSfx',['../classPlayerSfxManager.html#a1afdbfe2b043a8576fabff4dacc6110d',1,'PlayerSfxManager']]],
   ['fpwallkicksfx',['FpWallKickSfx',['../classPlayerSfxManager.html#aef1d4a060f9ada9a337252d01972db2a',1,'PlayerSfxManager']]],

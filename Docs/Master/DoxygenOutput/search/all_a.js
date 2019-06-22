@@ -4,7 +4,7 @@ var searchData=
   ['jump',['Jump',['../classPlayer.html#a0e81bfad59829105d6d9e1deb6feea2c',1,'Player']]],
   ['jumpaxis',['JumpAxis',['../classPlayer.html#a8042c5639c1f4f63e64fc196f9d485ad',1,'Player']]],
   ['jumpcontinueforce',['JumpContinueForce',['../classPlayer.html#a7e653f903ca9770902a5f523ca50ffd1',1,'Player']]],
-  ['jumperrocket',['JumperRocket',['../classJumperRocket.html',1,'']]],
+  ['jumperrocket',['JumperRocket',['../classJumperRocket.html',1,'JumperRocket'],['../classJumperRocket.html#a423962446bc41fad7c4afdbe2672889a',1,'JumperRocket.JumperRocket()']]],
   ['jumperrocket_2ecs',['JumperRocket.cs',['../JumperRocket_8cs.html',1,'']]],
   ['jumperrocketscene',['JumperRocketScene',['../classRocketJumper.html#a3967aea268404383ed6e6e35f55ca1a2',1,'RocketJumper']]],
   ['jumpsens',['JumpSens',['../classPlayer.html#a4890178dd29d14c7d907a3591d9da1b6',1,'Player']]],
