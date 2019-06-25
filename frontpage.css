@@ -39,6 +39,18 @@ h1 {
 }
 
 
+#itch {
+	margin-top: 3.5vw;
+	width: 100%;
+	text-align: center;
+}
+
+#itch iframe {
+	margin: 0px;
+	padding: 0px;
+}
+
+
 #trailer {
 	margin-top: 4vw;
 	margin-left: 4%;
