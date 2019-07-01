@@ -140,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2><a class="el" href="classPlayer.html">Player</a> Input Handling</h2>
 <p>All player input is routed through the binding system which depending on the input will call a console command passing in a <code>float</code> ranging between 0 and 1 (up to infinity in some cases such as mouse movement). Key input pass in a 1 for keydown and a 0 for keyup while analog inputs such as mouse motion pass in a 0 for no movement on the specified axis and a number greater than 0 for motion on that axis (the number is the amount of motion).</p>
 <p><b>Note:</b> This is not restricted to built in movement and player control console commands. Any function declared in the console REPL can be bound to any key or input.</p>
-<h2>Internal <a class="el" href="classStructure.html">Structure</a></h2>
+<h2>Internal Structure</h2>
 <p>SkyOfSteel is built up of a number of singleton "libraries". Each one of these libraries deals with a portion of the game's actions and has a number of public static methods in order to be called from other libraries and classes.</p>
 <p>Beyond these "libraries" the project directory is split up into pretty self explanatory folders which are almost like "modules" in that they (under most conditions) contain everything related to the folder name (ex: the <code>UI</code> folder has alls GUI scenes, script, and textures). Note that these folders are not self contained but instead all source files are pretty much entwined though the folder names are a good indication of where to look when trying to find the implementation of a specific feature.</p>
 <h2>Contributing</h2>

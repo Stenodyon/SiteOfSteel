@@ -5,6 +5,6 @@ var searchData=
   ['oldrotations',['OldRotations',['../classGhost.html#a90b143672a1667edd915d01d868bff4c',1,'Ghost']]],
   ['oldtype',['OldType',['../classGhost.html#a3c1d547105422deabe08d19d65d2fe6c',1,'Ghost']]],
   ['oldvisible',['OldVisible',['../classGhost.html#a8ff78b763d71dc3e9619544ffa2ba36e',1,'Ghost']]],
-  ['ownerid',['OwnerId',['../classStructure.html#a50c45cb093c3259e791c7e47d7cc0b1b',1,'Structure']]],
+  ['ownerid',['OwnerId',['../classTile.html#a6f2f091cf3ea524ecb48c1ba0e802572',1,'Tile']]],
   ['ownname',['OwnName',['../classGamemode.html#a23457a1d16e53b768ad1a84322da77fe',1,'Gamemode']]]
 ];

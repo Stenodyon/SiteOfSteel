@@ -4,7 +4,7 @@ var searchData=
   ['nameedit',['NameEdit',['../classNickMenu.html#aeca7594477cfdae030cb4c7d9688ce83',1,'NickMenu']]],
   ['net',['Net',['../classNet.html',1,'Net'],['../classNet.html#a64e351d080be74cda2fb17f3bb942f69',1,'Net.Net()']]],
   ['net_2ecs',['Net.cs',['../Net_8cs.html',1,'']]],
-  ['netremove',['NetRemove',['../classStructure.html#adb1bfa9dc39c2f40073c57b96a773239',1,'Structure']]],
+  ['netremove',['NetRemove',['../classTile.html#a8a9bfc50db9c24cbfa98d1f84e19b3dd',1,'Tile']]],
   ['newcustomitemenum',['NewCustomItemEnum',['../classItems.html#a6a0a4f4abb410fcef800127ef2ca0032',1,'Items']]],
   ['newpressed',['NewPressed',['../classHostMenu.html#a5ff8318be73e137a5fce7ee87c0c6243',1,'HostMenu']]],
   ['nextspot',['NextSpot',['../structItems_1_1CustomItemEnum.html#a1a861970f6d670fcdbe2af2c15c20823',1,'Items::CustomItemEnum']]],

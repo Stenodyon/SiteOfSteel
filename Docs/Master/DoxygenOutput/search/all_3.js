@@ -2,7 +2,7 @@ var searchData=
 [
   ['calculatearea',['CalculateArea',['../classGridClass.html#ac638c9c370df9ead071970c1132e6add',1,'GridClass']]],
   ['calculateareas',['CalculateAreas',['../classGridClass.html#aa93dfb986dd5f1c941955f4759885bb9',1,'GridClass']]],
-  ['calculatebuildrotation',['CalculateBuildRotation',['../classItems.html#a6fdd49ae9ef5b50616bd5ef9779b0816',1,'Items']]],
+  ['calculatebuildrotation',['CalculateBuildRotation',['../classItems.html#a5d2269cf7933b47e5bfd9a085c676811',1,'Items']]],
   ['cam',['Cam',['../classPlayer.html#a2a24343d330c7c5961c905b03fd223d4',1,'Player']]],
   ['canbuild',['CanBuild',['../classGhost.html#a4642983126ec680d1802f65727ffc7c8',1,'Ghost']]],
   ['cancelpressed',['CancelPressed',['../classWaitConnectingMenu.html#a5f9be70fe12dd3bb05150a9afd2da122',1,'WaitConnectingMenu']]],

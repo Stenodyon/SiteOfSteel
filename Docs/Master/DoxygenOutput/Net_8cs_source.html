@@ -398,7 +398,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            {</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classNet.html#af0a141fd2a05f1384f94acca99c6365e">Self</a>.GetTree().IsNetworkServer())</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    <span class="keywordflow">foreach</span>(<a class="code" href="classStructure.html">Structure</a> CurrentStructure <span class="keywordflow">in</span> Chunk.Value.Structures)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentStructure <span class="keywordflow">in</span> Chunk.Value.Structures)</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                    {</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                        CurrentStructure.Show();</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                    }</div>
@@ -411,8 +411,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            }</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                List&lt;Structure&gt; StructuresBeingRemoved = <span class="keyword">new</span> List&lt;Structure&gt;();</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="classStructure.html">Structure</a> CurrentStructure <span class="keywordflow">in</span> Chunk.Value.Structures)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                List&lt;Tile&gt; StructuresBeingRemoved = <span class="keyword">new</span> List&lt;Tile&gt;();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentStructure <span class="keywordflow">in</span> Chunk.Value.Structures)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                {</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="classNet.html#af0a141fd2a05f1384f94acca99c6365e">Self</a>.GetTree().IsNetworkServer())</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                    {</div>
@@ -423,7 +423,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                        StructuresBeingRemoved.Add(CurrentStructure);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                    }</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="classStructure.html">Structure</a> CurrentStructure <span class="keywordflow">in</span> StructuresBeingRemoved)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentStructure <span class="keywordflow">in</span> StructuresBeingRemoved)</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                {</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                        CurrentStructure.Remove(Force:<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                }</div>
@@ -488,7 +488,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classNet_html_aa9021c48f2a9ca7152c7dd8d6eb1bf46"><div class="ttname"><a href="classNet.html#aa9021c48f2a9ca7152c7dd8d6eb1bf46">Net.ConnectToFailed</a></div><div class="ttdeci">delegate void ConnectToFailed(string Ip)</div></div>
 <div class="ttc" id="classNet_html_a779150436be77df01034c832292becf0"><div class="ttname"><a href="classNet.html#a779150436be77df01034c832292becf0">Net.Ip</a></div><div class="ttdeci">static string Ip</div><div class="ttdef"><b>Definition:</b> <a href="Net_8cs_source.html#l00017">Net.cs:17</a></div></div>
 <div class="ttc" id="classWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00006">World.cs:6</a></div></div>
-<div class="ttc" id="classStructure_html"><div class="ttname"><a href="classStructure.html">Structure</a></div><div class="ttdef"><b>Definition:</b> <a href="Structure_8cs_source.html#l00004">Structure.cs:4</a></div></div>
 <div class="ttc" id="classNet_html_ac033190feb2a2d5b3901f6bd7cbc0762"><div class="ttname"><a href="classNet.html#ac033190feb2a2d5b3901f6bd7cbc0762">Net.SteelRpc</a></div><div class="ttdeci">static void SteelRpc(Node Instance, string Method, params object[] Args)</div><div class="ttdef"><b>Definition:</b> <a href="Net_8cs_source.html#l00048">Net.cs:48</a></div></div>
 <div class="ttc" id="classGame_html_aff4e8e31b7687e96cb443a25e7586974"><div class="ttname"><a href="classGame.html#aff4e8e31b7687e96cb443a25e7586974">Game.MaxPlayers</a></div><div class="ttdeci">static int MaxPlayers</div><div class="ttdef"><b>Definition:</b> <a href="Game_8cs_source.html#l00013">Game.cs:13</a></div></div>
 <div class="ttc" id="classNet_html_a74b1735d30323b446357a054d8f4fcf1"><div class="ttname"><a href="classNet.html#a74b1735d30323b446357a054d8f4fcf1">Net.ReadyToRequestWorld</a></div><div class="ttdeci">void ReadyToRequestWorld()</div><div class="ttdef"><b>Definition:</b> <a href="Net_8cs_source.html#l00288">Net.cs:288</a></div></div>
@@ -507,6 +506,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> <a href="Game_8cs_source.html#l00005">Game.cs:5</a></div></div>
 <div class="ttc" id="classNet_html_a71637882db3d2710e7b735b06985e295"><div class="ttname"><a href="classNet.html#a71637882db3d2710e7b735b06985e295">Net.ServerId</a></div><div class="ttdeci">static int ServerId</div><div class="ttdef"><b>Definition:</b> <a href="Net_8cs_source.html#l00014">Net.cs:14</a></div></div>
 <div class="ttc" id="classNet_html_a9b5d40f8658361c41f9d8cb2328337a3"><div class="ttname"><a href="classNet.html#a9b5d40f8658361c41f9d8cb2328337a3">Net._PlayerConnected</a></div><div class="ttdeci">void _PlayerConnected(int Id)</div><div class="ttdef"><b>Definition:</b> <a href="Net_8cs_source.html#l00074">Net.cs:74</a></div></div>
+<div class="ttc" id="classTile_html"><div class="ttname"><a href="classTile.html">Tile</a></div><div class="ttdef"><b>Definition:</b> <a href="Tile_8cs_source.html#l00004">Tile.cs:4</a></div></div>
 <div class="ttc" id="classNet_html_ab18a56e7b999ba23138f323f6f0b1f2b"><div class="ttname"><a href="classNet.html#ab18a56e7b999ba23138f323f6f0b1f2b">Net.Work</a></div><div class="ttdeci">static MultiplayerAPI Work</div><div class="ttdef"><b>Definition:</b> <a href="Net_8cs_source.html#l00027">Net.cs:27</a></div></div>
 <div class="ttc" id="classNet_html_aaca6d6cb9a9f6115f5a4334736be64a4"><div class="ttname"><a href="classNet.html#aaca6d6cb9a9f6115f5a4334736be64a4">Net._Ready</a></div><div class="ttdeci">override void _Ready()</div><div class="ttdef"><b>Definition:</b> <a href="Net_8cs_source.html#l00038">Net.cs:38</a></div></div>
 <div class="ttc" id="classNet_html_af0a141fd2a05f1384f94acca99c6365e"><div class="ttname"><a href="classNet.html#af0a141fd2a05f1384f94acca99c6365e">Net.Self</a></div><div class="ttdeci">static Net Self</div><div class="ttdef"><b>Definition:</b> <a href="Net_8cs_source.html#l00029">Net.cs:29</a></div></div>

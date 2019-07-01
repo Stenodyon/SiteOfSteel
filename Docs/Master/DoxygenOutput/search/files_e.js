@@ -6,6 +6,5 @@ var searchData=
   ['shadercompilerhider_2ecs',['ShaderCompilerHider.cs',['../ShaderCompilerHider_8cs.html',1,'']]],
   ['slotbutton_2ecs',['SlotButton.cs',['../SlotButton_8cs.html',1,'']]],
   ['startup_2ecs',['Startup.cs',['../Startup_8cs.html',1,'']]],
-  ['steelmath_2ecs',['SteelMath.cs',['../SteelMath_8cs.html',1,'']]],
-  ['structure_2ecs',['Structure.cs',['../Structure_8cs.html',1,'']]]
+  ['steelmath_2ecs',['SteelMath.cs',['../SteelMath_8cs.html',1,'']]]
 ];

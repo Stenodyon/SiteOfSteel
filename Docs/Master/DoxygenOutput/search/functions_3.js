@@ -2,7 +2,7 @@ var searchData=
 [
   ['calculatearea',['CalculateArea',['../classGridClass.html#ac638c9c370df9ead071970c1132e6add',1,'GridClass']]],
   ['calculateareas',['CalculateAreas',['../classGridClass.html#aa93dfb986dd5f1c941955f4759885bb9',1,'GridClass']]],
-  ['calculatebuildrotation',['CalculateBuildRotation',['../classItems.html#a6fdd49ae9ef5b50616bd5ef9779b0816',1,'Items']]],
+  ['calculatebuildrotation',['CalculateBuildRotation',['../classItems.html#a5d2269cf7933b47e5bfd9a085c676811',1,'Items']]],
   ['cancelpressed',['CancelPressed',['../classWaitConnectingMenu.html#a5f9be70fe12dd3bb05150a9afd2da122',1,'WaitConnectingMenu']]],
   ['chunkexists',['ChunkExists',['../classWorld.html#a712c99f43b0f2bcaf98fb40993b0ddb1',1,'World.ChunkExists(Vector3 Position)'],['../classWorld.html#ab0d0a95deec3a88e4fefaf819845e0ad',1,'World.ChunkExists(Tuple&lt; int, int &gt; Position)']]],
   ['chunkrenderdistance',['ChunkRenderDistance',['../classAPI.html#af167f0fe441137769b305de09a668529',1,'API']]],

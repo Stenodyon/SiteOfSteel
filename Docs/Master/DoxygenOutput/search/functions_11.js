@@ -5,7 +5,7 @@ var searchData=
   ['reloadgm',['ReloadGm',['../classAPI.html#a34ddcf7b92cf30fc909739c6478374cb',1,'API']]],
   ['reloadsave',['ReloadSave',['../classAPI.html#ac9c553d84d7f954c3c596878eb599944',1,'API']]],
   ['remotefire',['RemoteFire',['../classRocketJumper.html#a93c815ff6e3e05d30a2cfd2fb3cceae9',1,'RocketJumper']]],
-  ['remove',['Remove',['../classDroppedItem.html#a767842ad34983535915483fd92f75a21',1,'DroppedItem.Remove()'],['../classStructure.html#a5314c98b1ce0e0dd2bbb00f279cc1e30',1,'Structure.Remove()']]],
+  ['remove',['Remove',['../classDroppedItem.html#a767842ad34983535915483fd92f75a21',1,'DroppedItem.Remove()'],['../classTile.html#aa0bd027402eabd2d9dc886594b4fd385',1,'Tile.Remove()']]],
   ['removedroppeditem',['RemoveDroppedItem',['../classWorld.html#ae97c745f753243c8678daee000657d1b',1,'World']]],
   ['removenicklabel',['RemoveNickLabel',['../classHUD.html#a01312ea566037483a3c81a3d31eba95a',1,'HUD']]],
   ['removestructure',['RemoveStructure',['../classWorld.html#a00cb9921868c5db9387db8d3870d7ef1',1,'World']]],

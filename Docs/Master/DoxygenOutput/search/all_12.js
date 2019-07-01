@@ -73,9 +73,7 @@ var searchData=
   ['steelmath_2ecs',['SteelMath.cs',['../SteelMath_8cs.html',1,'']]],
   ['steelrpc',['SteelRpc',['../classNet.html#ac033190feb2a2d5b3901f6bd7cbc0762',1,'Net']]],
   ['steelrpcunreliable',['SteelRpcUnreliable',['../classNet.html#a722f9e36d7cf2f9d04139ad0170b4151',1,'Net']]],
-  ['structure',['Structure',['../classStructure.html',1,'']]],
-  ['structure_2ecs',['Structure.cs',['../Structure_8cs.html',1,'']]],
   ['structureroot',['StructureRoot',['../classWorld.html#a7a9789d12745d960db7976cef06a7a4f',1,'World']]],
-  ['structures',['Structures',['../classChunkClass.html#a696a8b43dd85ae77f29a2d41f09e3e97',1,'ChunkClass']]],
+  ['structures',['Structures',['../classChunkClass.html#a4d74b2151795f27e4c33d9be672985c9',1,'ChunkClass']]],
   ['structureshader',['StructureShader',['../classItems.html#a101ee6b026eef70ff3fe54ba56c59dd3',1,'Items']]]
 ];
