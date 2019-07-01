@@ -10,6 +10,7 @@ var searchData=
   ['tile',['Tile',['../classTile.html',1,'']]],
   ['tile_2ecs',['Tile.cs',['../Tile_8cs.html',1,'']]],
   ['tiles',['Tiles',['../classChunkClass.html#ae91eeb6131a9117d89af9ef32fb54132',1,'ChunkClass']]],
+  ['tileshader',['TileShader',['../classItems.html#aac6afd3b62f54f34511d8568b568b844',1,'Items']]],
   ['tilesroot',['TilesRoot',['../classWorld.html#ae736814b6743bf07d4833e7aa032c7d8',1,'World']]],
   ['togglefly',['ToggleFly',['../classPlayer.html#a90ad2bec897fdc9ffc21e79c46267853',1,'Player.ToggleFly()'],['../classAPI.html#ab7a4b58585b65729ddbc175d347039ee',1,'API.ToggleFly()']]],
   ['tojson',['ToJson',['../classSavedChunk.html#ab58781eefa5f9163f25eae12f4d9eb38',1,'SavedChunk.ToJson()'],['../classSavedStructure.html#a363a7a7d93ca80f8d8b42516e6b1ecc5',1,'SavedStructure.ToJson()']]],
