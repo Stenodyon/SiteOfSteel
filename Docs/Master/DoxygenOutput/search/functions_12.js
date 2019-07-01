@@ -3,7 +3,7 @@ var searchData=
   ['save',['Save',['../classAPI.html#a147fed36704a397a0e2762e684ea3868',1,'API.Save()'],['../classWorld.html#aece420c2fa35768d941bce6ff711eef4',1,'World.Save()']]],
   ['savechunk',['SaveChunk',['../classWorld.html#af1082f376b85300ea825e2177995892a',1,'World']]],
   ['savedchunk',['SavedChunk',['../classSavedChunk.html#adbab067bfcc0368db7f6556e9a67fdd1',1,'SavedChunk.SavedChunk(Tuple&lt; int, int &gt; ChunkTupleArg)'],['../classSavedChunk.html#a4eef917a997b950f6ae95fa2799a3644',1,'SavedChunk.SavedChunk()']]],
-  ['savedstructure',['SavedStructure',['../classSavedStructure.html#a5a51f20fdecdaa1a5178db2ef3328044',1,'SavedStructure']]],
+  ['savedtile',['SavedTile',['../classSavedTile.html#a7972decac95ffe97f991449206fab7fd',1,'SavedTile']]],
   ['savepressed',['SavePressed',['../classPauseMenu.html#a3682081c4109e89eeba8e50a369a0d7f',1,'PauseMenu']]],
   ['scripting',['Scripting',['../classScripting.html#ab713491acca5e4f62655b5c452a4bd04',1,'Scripting']]],
   ['secondaryfire',['SecondaryFire',['../classPlayer.html#a4216fab6e9ebf943310864b944967cbc',1,'Player']]],

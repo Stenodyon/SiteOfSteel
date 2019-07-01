@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['t',['T',['../classSavedStructure.html#a21353541f33af2f13e3a94ab65176474',1,'SavedStructure']]],
+  ['t',['T',['../classSavedTile.html#a36fd1e4ead7b0af127bf704dee3d566a',1,'SavedTile']]],
   ['temperature',['Temperature',['../classItems_1_1Instance.html#ad416af818ec4ceb8b8faf2ac46eed49a',1,'Items::Instance']]],
   ['thumbnails',['Thumbnails',['../classItems.html#a993da7032b29dd992a419d2a54d3fd9a',1,'Items']]],
   ['tiles',['Tiles',['../classChunkClass.html#ae91eeb6131a9117d89af9ef32fb54132',1,'ChunkClass']]],

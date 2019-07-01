@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['t',['T',['../classSavedStructure.html#a21353541f33af2f13e3a94ab65176474',1,'SavedStructure']]],
+  ['t',['T',['../classSavedTile.html#a36fd1e4ead7b0af127bf704dee3d566a',1,'SavedTile']]],
   ['temperature',['Temperature',['../classItems_1_1Instance.html#ad416af818ec4ceb8b8faf2ac46eed49a',1,'Items::Instance']]],
   ['textures',['Textures',['../classItems.html#a74d044457deb56e0deae186ffc121d55',1,'Items']]],
   ['throwcurrentitem',['ThrowCurrentItem',['../classPlayer.html#aec5b0137784497934b1d11633442b6ef',1,'Player']]],
@@ -13,7 +13,7 @@ var searchData=
   ['tileshader',['TileShader',['../classItems.html#aac6afd3b62f54f34511d8568b568b844',1,'Items']]],
   ['tilesroot',['TilesRoot',['../classWorld.html#ae736814b6743bf07d4833e7aa032c7d8',1,'World']]],
   ['togglefly',['ToggleFly',['../classPlayer.html#a90ad2bec897fdc9ffc21e79c46267853',1,'Player.ToggleFly()'],['../classAPI.html#ab7a4b58585b65729ddbc175d347039ee',1,'API.ToggleFly()']]],
-  ['tojson',['ToJson',['../classSavedChunk.html#ab58781eefa5f9163f25eae12f4d9eb38',1,'SavedChunk.ToJson()'],['../classSavedStructure.html#a363a7a7d93ca80f8d8b42516e6b1ecc5',1,'SavedStructure.ToJson()']]],
+  ['tojson',['ToJson',['../classSavedChunk.html#ab58781eefa5f9163f25eae12f4d9eb38',1,'SavedChunk.ToJson()'],['../classSavedTile.html#a643a3aaa64d7df63effac80cc2baf0ab',1,'SavedTile.ToJson()']]],
   ['toolbarscrollseperator',['ToolbarScrollSeperator',['../classHostMenu.html#aea3c9e363cfbaa2919c70d57d7728564',1,'HostMenu']]],
   ['tpland',['TpLand',['../classPlayerSfxManager.html#a63d951b23123bf01dc2148aff4e1e0f5',1,'PlayerSfxManager']]],
   ['tplandsfx',['TpLandSfx',['../classPlayerSfxManager.html#ae36946b4c5417555544f701b2d083e3c',1,'PlayerSfxManager']]],

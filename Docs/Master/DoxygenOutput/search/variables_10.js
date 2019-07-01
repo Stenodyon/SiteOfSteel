@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r',['R',['../classSavedStructure.html#aed1cec3197ac975948e2526cf44e8861',1,'SavedStructure']]],
+  ['r',['R',['../classSavedTile.html#a45392533991d53eb20d3e21604a0f703',1,'SavedTile']]],
   ['recoverpercentage',['RecoverPercentage',['../classPlayer.html#a87c1e53706908ab6e4af3bf7d164cc62',1,'Player']]],
   ['recoverspeed',['RecoverSpeed',['../classPlayer.html#a27cdc203f83b608f7dee64d883a3bd83',1,'Player']]],
   ['redmat',['RedMat',['../classGhost.html#aa44195b94e677ff02e0c7c1c1e32499e',1,'Ghost']]],

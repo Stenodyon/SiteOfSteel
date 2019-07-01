@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r',['R',['../classSavedStructure.html#aed1cec3197ac975948e2526cf44e8861',1,'SavedStructure']]],
+  ['r',['R',['../classSavedTile.html#a45392533991d53eb20d3e21604a0f703',1,'SavedTile']]],
   ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
   ['readytorequestworld',['ReadyToRequestWorld',['../classNet.html#a74b1735d30323b446357a054d8f4fcf1',1,'Net']]],
   ['recievenick',['RecieveNick',['../classNet.html#a3b998694e12abd275fdc8a175ede7337',1,'Net']]],

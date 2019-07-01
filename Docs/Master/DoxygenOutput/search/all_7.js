@@ -7,7 +7,7 @@ var searchData=
   ['gamemodename',['GamemodeName',['../classScripting.html#ade5b51771201a31fd7174ea00c62bb78',1,'Scripting']]],
   ['getchunkpos',['GetChunkPos',['../classWorld.html#a4b119f9177ec4f95b69a1791deafb2c8',1,'World']]],
   ['getchunktuple',['GetChunkTuple',['../classWorld.html#a8e28a7ce76cf6c242e81790ac4c7ad47',1,'World']]],
-  ['getinfoornull',['GetInfoOrNull',['../classSavedStructure.html#a2d734f3a95ee4805c89c78c4861b959c',1,'SavedStructure']]],
+  ['getinfoornull',['GetInfoOrNull',['../classSavedTile.html#a8e9f5b8f967e1a7a759606b37a8ad820',1,'SavedTile']]],
   ['getitems',['GetItems',['../classGridClass.html#aa7c914d0cd65ddee845fe910a4d2c13a',1,'GridClass']]],
   ['ghost',['Ghost',['../classGhost.html',1,'Ghost'],['../classGhost.html#a45c5163f9905c346e10d23ad4b50983d',1,'Ghost.Ghost()']]],
   ['ghost_2ecs',['Ghost.cs',['../Ghost_8cs.html',1,'']]],
