@@ -111,8 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1d7605ef8477505d8872d401f76aa270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a259bcf5bc7ea114bbaafb02843e20090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTile.html">Tile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#a259bcf5bc7ea114bbaafb02843e20090">PlaceWithName</a> (<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">Items.ID</a> BranchType, Vector3 Position, Vector3 Rotation, int OwnerId, string Name)</td></tr>
 <tr class="separator:a259bcf5bc7ea114bbaafb02843e20090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00cb9921868c5db9387db8d3870d7ef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#a00cb9921868c5db9387db8d3870d7ef1">RemoveStructure</a> (string Name)</td></tr>
-<tr class="separator:a00cb9921868c5db9387db8d3870d7ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9618f19a5fe9d8bcf62ed40ce7c9ddd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#a9618f19a5fe9d8bcf62ed40ce7c9ddd1">RemoveTile</a> (string Name)</td></tr>
+<tr class="separator:a9618f19a5fe9d8bcf62ed40ce7c9ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae97c745f753243c8678daee000657d1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#ae97c745f753243c8678daee000657d1b">RemoveDroppedItem</a> (string Guid)</td></tr>
 <tr class="separator:ae97c745f753243c8678daee000657d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c4018b34af9680e5a75f9df8906e2b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#a7c4018b34af9680e5a75f9df8906e2b4">InitialNetWorldLoad</a> (int Id, Vector3 PlayerPosition, int RenderDistance)</td></tr>
@@ -187,8 +187,8 @@ int &gt;, <a class="el" href="classChunkClass.html">ChunkClass</a> &gt;&#160;</t
 <tr class="separator:a8734595f82c8d5fc3fdd797761688234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e398b2303f52cdec1483a4cd013ff51"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#a2e398b2303f52cdec1483a4cd013ff51">SaveName</a> = null</td></tr>
 <tr class="separator:a2e398b2303f52cdec1483a4cd013ff51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a9789d12745d960db7976cef06a7a4f"><td class="memItemLeft" align="right" valign="top">static Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#a7a9789d12745d960db7976cef06a7a4f">StructureRoot</a> = null</td></tr>
-<tr class="separator:a7a9789d12745d960db7976cef06a7a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae736814b6743bf07d4833e7aa032c7d8"><td class="memItemLeft" align="right" valign="top">static Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#ae736814b6743bf07d4833e7aa032c7d8">TilesRoot</a> = null</td></tr>
+<tr class="separator:ae736814b6743bf07d4833e7aa032c7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa432e6aaaf3b8b8747b0346dff38393e"><td class="memItemLeft" align="right" valign="top">static Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#aa432e6aaaf3b8b8747b0346dff38393e">EntitiesRoot</a> = null</td></tr>
 <tr class="separator:aa432e6aaaf3b8b8747b0346dff38393e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acefe97e9014ccecb686f45b83442dc50"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classWorld.html">World</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#acefe97e9014ccecb686f45b83442dc50">Self</a></td></tr>
@@ -205,8 +205,8 @@ Static Private Member Functions</h2></td></tr>
 <tr class="separator:a712c99f43b0f2bcaf98fb40993b0ddb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0d0a95deec3a88e4fefaf819845e0ad"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#ab0d0a95deec3a88e4fefaf819845e0ad">ChunkExists</a> (Tuple&lt; int, int &gt; Position)</td></tr>
 <tr class="separator:ab0d0a95deec3a88e4fefaf819845e0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec91f5bba5a0e75a040ba08e29430c7e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#aec91f5bba5a0e75a040ba08e29430c7e">AddStructureToChunk</a> (<a class="el" href="classTile.html">Tile</a> Branch)</td></tr>
-<tr class="separator:aec91f5bba5a0e75a040ba08e29430c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bdabfa26a5c0ecca1c4f2026a38d133"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#a6bdabfa26a5c0ecca1c4f2026a38d133">AddTileToChunk</a> (<a class="el" href="classTile.html">Tile</a> Branch)</td></tr>
+<tr class="separator:a6bdabfa26a5c0ecca1c4f2026a38d133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33ea77893ece60d5cb4b459668fccd6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorld.html#ab33ea77893ece60d5cb4b459668fccd6">SendChunk</a> (int Id, Tuple&lt; int, int &gt; ChunkLocation)</td></tr>
 <tr class="separator:ab33ea77893ece60d5cb4b459668fccd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -297,7 +297,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aec91f5bba5a0e75a040ba08e29430c7e"></a>
+<a class="anchor" id="a6bdabfa26a5c0ecca1c4f2026a38d133"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -305,7 +305,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void World.AddStructureToChunk </td>
+          <td class="memname">static void World.AddTileToChunk </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classTile.html">Tile</a>&#160;</td>
           <td class="paramname"><em>Branch</em></td><td>)</td>
@@ -900,7 +900,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a00cb9921868c5db9387db8d3870d7ef1"></a>
+<a class="anchor" id="a9618f19a5fe9d8bcf62ed40ce7c9ddd1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -908,7 +908,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void World.RemoveStructure </td>
+          <td class="memname">void World.RemoveTile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>Name</em></td><td>)</td>
@@ -1423,7 +1423,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7a9789d12745d960db7976cef06a7a4f"></a>
+<a class="anchor" id="ae736814b6743bf07d4833e7aa032c7d8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1431,7 +1431,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Node World.StructureRoot = null</td>
+          <td class="memname">Node World.TilesRoot = null</td>
         </tr>
       </table>
   </td>

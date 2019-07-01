@@ -15,7 +15,5 @@ var searchData=
   ['slotsvbox',['SlotsVBox',['../classHostMenu.html#a9472b85df12d7fa168dd0b401d817649',1,'HostMenu']]],
   ['spot',['Spot',['../structItems_1_1CustomItemEnum.html#a17967637360c9e88a161ac650b851934',1,'Items::CustomItemEnum']]],
   ['sprintmultiplyer',['SprintMultiplyer',['../classPlayer.html#a7af9b0fa358e431600ab9ff20c825e39',1,'Player']]],
-  ['sprintsens',['SprintSens',['../classPlayer.html#a6459ac126e09881a85b7db2c59a61dd2',1,'Player']]],
-  ['structureroot',['StructureRoot',['../classWorld.html#a7a9789d12745d960db7976cef06a7a4f',1,'World']]],
-  ['structures',['Structures',['../classChunkClass.html#a4d74b2151795f27e4c33d9be672985c9',1,'ChunkClass']]]
+  ['sprintsens',['SprintSens',['../classPlayer.html#a6459ac126e09881a85b7db2c59a61dd2',1,'Player']]]
 ];

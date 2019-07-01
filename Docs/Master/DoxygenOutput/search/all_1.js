@@ -3,7 +3,7 @@ var searchData=
   ['additem',['AddItem',['../classGridClass.html#aefefb6047187e89dbafa31aeea28ebfe',1,'GridClass']]],
   ['additemtochunk',['AddItemToChunk',['../classWorld.html#ab579ff25eb1249b2f593f41603a80814',1,'World']]],
   ['addnicklabel',['AddNickLabel',['../classHUD.html#adca8e7e369d98b5fd95b8b8e8eeb4ab8',1,'HUD']]],
-  ['addstructuretochunk',['AddStructureToChunk',['../classWorld.html#aec91f5bba5a0e75a040ba08e29430c7e',1,'World']]],
+  ['addtiletochunk',['AddTileToChunk',['../classWorld.html#a6bdabfa26a5c0ecca1c4f2026a38d133',1,'World']]],
   ['affectedbodies',['AffectedBodies',['../classJumperRocket.html#a20e82cd798cc9a367fdab427b84904cc',1,'JumperRocket']]],
   ['airaccelerate',['AirAccelerate',['../classPlayer.html#a5aba1eb2c3a5238a1ccd2b49ec7989d9',1,'Player']]],
   ['airacceleration',['AirAcceleration',['../classPlayer.html#abc09c674116eea2ec514147d801a1acd',1,'Player']]],

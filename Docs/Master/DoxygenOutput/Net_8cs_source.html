@@ -398,9 +398,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            {</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classNet.html#af0a141fd2a05f1384f94acca99c6365e">Self</a>.GetTree().IsNetworkServer())</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentStructure <span class="keywordflow">in</span> Chunk.Value.Structures)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentTile <span class="keywordflow">in</span> Chunk.Value.Tiles)</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                    {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                        CurrentStructure.Show();</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                        CurrentTile.Show();</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                    }</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                    <span class="keywordflow">foreach</span>(<a class="code" href="classDroppedItem.html">DroppedItem</a> Item <span class="keywordflow">in</span> Chunk.Value.Items)</div>
@@ -411,21 +411,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            }</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                List&lt;Tile&gt; StructuresBeingRemoved = <span class="keyword">new</span> List&lt;Tile&gt;();</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentStructure <span class="keywordflow">in</span> Chunk.Value.Structures)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                List&lt;Tile&gt; TilesBeingRemoved = <span class="keyword">new</span> List&lt;Tile&gt;();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentTile <span class="keywordflow">in</span> Chunk.Value.Tiles)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                {</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="classNet.html#af0a141fd2a05f1384f94acca99c6365e">Self</a>.GetTree().IsNetworkServer())</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                    {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                        CurrentStructure.Hide();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                        CurrentTile.Hide();</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                    }</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                    {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                        StructuresBeingRemoved.Add(CurrentStructure);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                        TilesBeingRemoved.Add(CurrentTile);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                    }</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentStructure <span class="keywordflow">in</span> StructuresBeingRemoved)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="classTile.html">Tile</a> CurrentTile <span class="keywordflow">in</span> TilesBeingRemoved)</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                        CurrentStructure.Remove(Force:<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                        CurrentTile.Remove(Force:<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                }</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                List&lt;DroppedItem&gt; ItemsBeingRemoved = <span class="keyword">new</span> List&lt;DroppedItem&gt;();</div>

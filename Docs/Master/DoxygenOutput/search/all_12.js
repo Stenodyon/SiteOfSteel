@@ -43,11 +43,11 @@ var searchData=
   ['shouldmovementreset',['ShouldMovementReset',['../classGamemode.html#af9c2f87278fc379c1d9777a40d268349',1,'Gamemode']]],
   ['shouldmoveright',['ShouldMoveRight',['../classGamemode.html#a27f36695163bfe8805495f679451475e',1,'Gamemode']]],
   ['shouldpickupitem',['ShouldPickupItem',['../classGamemode.html#a3d7709959c55749cd87ea894fdc22d30',1,'Gamemode']]],
-  ['shouldplacestructure',['ShouldPlaceStructure',['../classGamemode.html#ae361c952658422bc6137a48151eeb14d',1,'Gamemode']]],
+  ['shouldplacetile',['ShouldPlaceTile',['../classGamemode.html#a382b0f08bf16398bd7743bc56cd7cbc1',1,'Gamemode']]],
   ['shouldplayermove',['ShouldPlayerMove',['../classGamemode.html#a25ee42c135457544e9551c70b7ebea77',1,'Gamemode']]],
   ['shouldplayerpitch',['ShouldPlayerPitch',['../classGamemode.html#af29a65c516b6451cb7876c623e3d5e46',1,'Gamemode']]],
   ['shouldplayerrotate',['ShouldPlayerRotate',['../classGamemode.html#adf96ad07ae0fef9217f121adef94775c',1,'Gamemode']]],
-  ['shouldremovestructure',['ShouldRemoveStructure',['../classGamemode.html#a37a26d4f3621dc7a08c38b52a8e3290c',1,'Gamemode']]],
+  ['shouldremovetile',['ShouldRemoveTile',['../classGamemode.html#a73f92e4a1b1fc7a36c7e90a28e3c1d99',1,'Gamemode']]],
   ['shouldsyncremoteplayerposition',['ShouldSyncRemotePlayerPosition',['../classGamemode.html#ab83e8c906b405e0377c9004e5ce9da1f',1,'Gamemode']]],
   ['shouldsyncremoteplayerrotation',['ShouldSyncRemotePlayerRotation',['../classGamemode.html#a2d76937dbf99443536426b6bf0d107a1',1,'Gamemode']]],
   ['shouldthrowitem',['ShouldThrowItem',['../classGamemode.html#aa0b5ec9ecd1a8fe42a25b52cc5f1bf56',1,'Gamemode']]],
@@ -73,7 +73,5 @@ var searchData=
   ['steelmath_2ecs',['SteelMath.cs',['../SteelMath_8cs.html',1,'']]],
   ['steelrpc',['SteelRpc',['../classNet.html#ac033190feb2a2d5b3901f6bd7cbc0762',1,'Net']]],
   ['steelrpcunreliable',['SteelRpcUnreliable',['../classNet.html#a722f9e36d7cf2f9d04139ad0170b4151',1,'Net']]],
-  ['structureroot',['StructureRoot',['../classWorld.html#a7a9789d12745d960db7976cef06a7a4f',1,'World']]],
-  ['structures',['Structures',['../classChunkClass.html#a4d74b2151795f27e4c33d9be672985c9',1,'ChunkClass']]],
   ['structureshader',['StructureShader',['../classItems.html#a101ee6b026eef70ff3fe54ba56c59dd3',1,'Items']]]
 ];

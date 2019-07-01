@@ -142,10 +142,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab83e8c906b405e0377c9004e5ce9da1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d76937dbf99443536426b6bf0d107a1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGamemode.html#a2d76937dbf99443536426b6bf0d107a1">ShouldSyncRemotePlayerRotation</a> (int PeerId, Vector3 Position)</td></tr>
 <tr class="separator:a2d76937dbf99443536426b6bf0d107a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae361c952658422bc6137a48151eeb14d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGamemode.html#ae361c952658422bc6137a48151eeb14d">ShouldPlaceStructure</a> (<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">Items.ID</a> BranchType, Vector3 Position, Vector3 Rotation)</td></tr>
-<tr class="separator:ae361c952658422bc6137a48151eeb14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a26d4f3621dc7a08c38b52a8e3290c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGamemode.html#a37a26d4f3621dc7a08c38b52a8e3290c">ShouldRemoveStructure</a> (<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">Items.ID</a> BranchType, Vector3 Position, Vector3 Rotation, int OwnerId)</td></tr>
-<tr class="separator:a37a26d4f3621dc7a08c38b52a8e3290c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382b0f08bf16398bd7743bc56cd7cbc1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGamemode.html#a382b0f08bf16398bd7743bc56cd7cbc1">ShouldPlaceTile</a> (<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">Items.ID</a> BranchType, Vector3 Position, Vector3 Rotation)</td></tr>
+<tr class="separator:a382b0f08bf16398bd7743bc56cd7cbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f92e4a1b1fc7a36c7e90a28e3c1d99"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGamemode.html#a73f92e4a1b1fc7a36c7e90a28e3c1d99">ShouldRemoveTile</a> (<a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">Items.ID</a> BranchType, Vector3 Position, Vector3 Rotation, int OwnerId)</td></tr>
+<tr class="separator:a73f92e4a1b1fc7a36c7e90a28e3c1d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -468,7 +468,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae361c952658422bc6137a48151eeb14d"></a>
+<a class="anchor" id="a382b0f08bf16398bd7743bc56cd7cbc1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -476,7 +476,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Gamemode.ShouldPlaceStructure </td>
+          <td class="memname">virtual bool Gamemode.ShouldPlaceTile </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">Items.ID</a>&#160;</td>
           <td class="paramname"><em>BranchType</em>, </td>
@@ -588,7 +588,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a37a26d4f3621dc7a08c38b52a8e3290c"></a>
+<a class="anchor" id="a73f92e4a1b1fc7a36c7e90a28e3c1d99"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -596,7 +596,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Gamemode.ShouldRemoveStructure </td>
+          <td class="memname">virtual bool Gamemode.ShouldRemoveTile </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classItems.html#a6774bacbe40c425044480de464c64e40">Items.ID</a>&#160;</td>
           <td class="paramname"><em>BranchType</em>, </td>
