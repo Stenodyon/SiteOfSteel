@@ -4,69 +4,86 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-	<meta charset="utf-8"/>
-	<title>SkyOfSteel</title>
-	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="https://overpass-30e2.kxcdn.com/overpass.css">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="global.css">
-	<link rel="stylesheet" type="text/css" href="frontpage.css">
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8"/>
+        <title>SkyOfSteel</title>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="https://overpass-30e2.kxcdn.com/overpass.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="global.css">
+        <link rel="stylesheet" type="text/css" href="frontpage.css">
+    </head>
+    <body>
 
 
-	{% include header.html %}
+        {% include header.html %}
 
 
-	<h1>SkyOfSteel</h1>
-	<div id="subtitle">
-	  An open source, multiplayer, sandbox experience.
-	</div>
+        <main>
+            <h1>SkyOfSteel</h1>
+            <h2>
+                An open source, multiplayer, sandbox experience.
+            </h2>
 
 
-	<div id="description">
-	  <p>
-		SkyOfSteel is a sandbox building game set in the
-		sky. Envisioned to be a game where one can build intricate
-		factories and sprawling supply chains while engaging in a PVP
-		turf war with your fellow server inhabitants. Enjoy highly
-		fluid movement while destroying others with highly powered
-		weaponry. Fight for technological superiority as you race
-		through a deep tech tree constantly edging out your
-		opponents. When you tire from the vanilla game, the custom
-		gamemode and modding support adds even more depth and
-		content.
-	  </p>
-	  <p>
-		Currently we are remarkably far along in achieving this
-		goal. However we are admittedly not there yet. At the moment
-		we have a fully functional building system, chunk based world
-		save and loading, highly stable multiplayer, Quake/Source
-		engine style air strafing, automatic bunny hopping, rocket
-		jumping, wall kicking, and a rudimentary yet extremely
-		flexible system for adding user created gamemodes.
-	  </p>
-	</div>
+            <div id="description">
+                <p>
+                SkyOfSteel is a sandbox building game set in the
+                sky. Envisioned to be a game where one can build intricate
+                factories and sprawling supply chains while engaging in a PVP
+                turf war with your fellow server inhabitants. Enjoy highly
+                fluid movement while destroying others with highly powered
+                weaponry. Fight for technological superiority as you race
+                through a deep tech tree constantly edging out your
+                opponents. When you tire from the vanilla game, the custom
+                gamemode and modding support adds even more depth and
+                content.
+                </p>
+                <p>
+                Currently we are remarkably far along in achieving this
+                goal. However we are admittedly not there yet. At the moment
+                we have a fully functional building system, chunk based world
+                save and loading, highly stable multiplayer, Quake/Source
+                engine style air strafing, automatic bunny hopping, rocket
+                jumping, wall kicking, and a rudimentary yet extremely
+                flexible system for adding user created gamemodes.
+                </p>
+            </div>
 
 
-	<p id="itch">
-	  <iframe src="https://itch.io/embed/372880?linkback=true&amp;border_width=5&amp;bg_color=77b0ff&amp;fg_color=000000&amp;link_color=14e500&amp;border_color=4c4c56"
-			  width="800" height="175" frameborder="0"></iframe>
-	</p>
+            <p id="itch">
+            <iframe
+                src="https://itch.io/embed/372880?linkback=true&amp;border_width=5&amp;bg_color=777777&amp;fg_color=000000&amp;link_color=14e500&amp;border_color=4c4c56"
+                width="800"
+                height="175"
+                frameborder="0"></iframe>
+            </p>
 
 
-	<div id="trailer">
-	  <iframe width="560" height="315"
-			  src="https://www.youtube.com/embed/D9XTBXHrNhc" frameborder="0"
-			  allow="accelerometer; autoplay; encrypted-media;
-			  gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
-	<div id="discord">
-	  <iframe src="https://discordapp.com/widget?id=364099738091651074&theme=dark"
-			  width="350" height="500" allowtransparency="true"
-			  frameborder="0"></iframe>
-	</div>
+            <div class="community">
+                <div id="trailer">
+                    <div class="iframe-yt">
+                        <iframe width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/D9XTBXHrNhc"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media;
+                                gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div id="discord">
+                    <div class="iframe-discord">
+                        <iframe src="https://discordapp.com/widget?id=364099738091651074&theme=dark"
+                                width="350"
+                                height="500"
+                                allowtransparency="true"
+                                frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
 
 
   </body>
